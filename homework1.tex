@@ -136,39 +136,39 @@
 
         \item Find (the commutator) $AB-BA$.
 
-        \textcolor{hwColor}{
-          $
-            AB-BA=\begin{pmatrix}
-              24 & 12 & 13 
+          \textcolor{hwColor}{
+            $
+              AB-BA=\begin{pmatrix}
+                24 & 12 & 13 
+                \\
+                7 & 5 & 6 
+                \\
+                1 & 3 & 4
+              \end{pmatrix}-\begin{pmatrix}
+                15 & 17 & 2
+                \\
+                11 & 14 & 2
+                \\
+                -2 & 11 & 4
+              \end{pmatrix}=\begin{pmatrix}
+                24-15 & 12-17 & 13-2 
+                \\
+                7-11 & 5-14 & 6-2 
+                \\
+                1-(-2) & 3-11 & 4-4 
+              \end{pmatrix}
               \\
-              7 & 5 & 6 
               \\
-              1 & 3 & 4
-            \end{pmatrix}-\begin{pmatrix}
-              15 & 17 & 2
               \\
-              11 & 14 & 2
-              \\
-              -2 & 11 & 4
-            \end{pmatrix}=\begin{pmatrix}
-              24-15 & 12-17 & 13-2 
-              \\
-              7-11 & 5-14 & 6-2 
-              \\
-              1-(-2) & 3-11 & 4-4 
-            \end{pmatrix}
-            \\
-            \\
-            \\
-            \therefore ~~~ AB-BA=\begin{pmatrix}
-              9 & -5 & 11
-              \\
-              -4 & -9 & 4 
-              \\
-              3 & -8 & 0 
-            \end{pmatrix} ~~~~ \checkmark
-          $
-        }
+              \therefore ~~~ AB-BA=\begin{pmatrix}
+                9 & -5 & 11
+                \\
+                -4 & -9 & 4 
+                \\
+                3 & -8 & 0 
+              \end{pmatrix} ~~~~ \checkmark
+            $
+          }
 
       \end{itemize}
     
@@ -184,6 +184,223 @@
           x+y-2z-w=-1
         \end{cases}
       $$
+
+        \textcolor{hwColor}{
+          $
+            A=\left(\begin{array}{cccc|c}  
+              -1 & 1 & 1 & 1 & 2 \\  
+              -1 & -1 & 1 & -1 & 6 \\
+              -1 & 1 & 3 & 2 & 4 \\
+              1 & 1 & -2 & -1 & -1 
+            \end{array}\right)
+            \\
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_1 \rightarrow -R_1 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              -1 & -1 & 1 & -1 & 6 \\
+              -1 & 1 & 3 & 2 & 4 \\
+              1 & 1 & -2 & -1 & -1 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_2 \rightarrow R_1+R_2
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & -2 & 0 & -2 & 4 \\
+              -1 & 1 & 3 & 2 & 4 \\
+              1 & 1 & -2 & -1 & -1 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3 \rightarrow R_1+R_3
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & -2 & 0 & -2 & 4 \\
+              0 & 0 & 2 & 1 & 2 \\
+              1 & 1 & -2 & -1 & -1 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_4 \rightarrow -R_1+R_4
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & -2 & 0 & -2 & 4 \\
+              0 & 0 & 2 & 1 & 2 \\
+              0 & 2 & -1 & 0 & 1 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_2 \rightarrow -\dfrac{1}{2}R_2
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 2 & 1 & 2 \\
+              0 & 2 & -1 & 0 & 1 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_4 \rightarrow -2R_2+R_4
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 2 & 1 & 2 \\
+              0 & 0 & -1 & -2 & 5 
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3 \rightarrow \dfrac{1}{2} R_3 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 1 & \dfrac{1}{2} & 1 \\
+              0 & 0 & -1 & -2 & 5
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_4 \rightarrow R_3+R_4 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 1 & \dfrac{1}{2} & 1 \\
+              0 & 0 & 0 & -\dfrac{3}{2} & 6
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_4 \rightarrow -\dfrac{2}{3}R_4 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 1 & \dfrac{1}{2} & 1 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3 \rightarrow R_3-\dfrac{1}{2}R_4 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 1 & -2 \\
+              0 & 0 & 1 & 0 & 3 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_2 \rightarrow -R_4+R_2 
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & -1 & -2 \\  
+              0 & 1 & 0 & 0 & 2 \\
+              0 & 0 & 1 & 0 & 3 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_1 \rightarrow R_1+R_4  
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & -1 & 0 & -6 \\  
+              0 & 1 & 0 & 0 & 2 \\
+              0 & 0 & 1 & 0 & 3 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_1 \rightarrow R_1+R_3  
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & -1 & 0 & 0 & -3 \\  
+              0 & 1 & 0 & 0 & 2 \\
+              0 & 0 & 1 & 0 & 3 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_1 \rightarrow R_1+R_2  
+            \\
+            \\
+            A=\left(\begin{array}{cccc|c}  
+              1 & 0 & 0 & 0 & -1 \\  
+              0 & 1 & 0 & 0 & 2 \\
+              0 & 0 & 1 & 0 & 3 \\
+              0 & 0 & 0 & 1 & -4
+            \end{array}\right)
+            \\
+            \\
+            \\
+            \therefore ~~~~ \begin{cases}
+              x=-1 \\
+              y=2 \\
+              z=3 \\
+              w=-4
+            \end{cases}  ~~~~~ \checkmark
+          $
+        }
 
     \item Solve the following system of matrix equations
       $$
