@@ -296,6 +296,7 @@
         $
       }
 
+    \pagebreak
 
     \item Use Cramer's rule to solve the system of linear equations
       $$
@@ -307,6 +308,93 @@
           x-y+3z=9
         \end{cases}
       $$
+
+      \textcolor{hwColor}{
+        $
+          A=\begin{pmatrix}
+            -1 & 1 & 2 
+            \\
+            1 & -2 & 1 
+            \\
+            1 & -1 & 3
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          det(A)=A=\begin{vmatrix}
+            -1 & 1 & 2 
+            \\
+            1 & -2 & 1 
+            \\
+            1 & -1 & 3
+          \end{vmatrix}=(-1)(-1)^{1+1} \begin{vmatrix}
+            -2 & 1 
+            \\
+            -1 & 3
+          \end{vmatrix}+(-1)^{1+2}\begin{vmatrix}
+            1 & 1 
+            \\
+            1 & 3
+          \end{vmatrix}+2(-1)^{1+3}\begin{vmatrix}
+            1 & -2 
+            \\
+            1 & -1
+          \end{vmatrix}
+          \\
+          \\
+          \therefore ~~~~~ det(A)=5
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_x=\begin{vmatrix}
+            3 & 1 & 2 
+            \\
+            6 & -2 & 1 
+            \\
+            9 & -1 & 3
+          \end{vmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_y=\begin{vmatrix}
+            -1 & 3 & 2 
+            \\
+            1 & 6 & 1 
+            \\
+            1 & 9 & 3
+          \end{vmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_z=\begin{vmatrix}
+            -1 & 3 & 2 
+            \\
+            1 & 6 & 1 
+            \\
+            1 & 9 & 3
+          \end{vmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \begin{cases}
+            x=\dfrac{det(A)}{D_x}=\dfrac{}{5}=1
+            \\
+            \\
+            y=\dfrac{det(A)}{D_y}=\dfrac{}{5}=2
+            \\
+            \\
+            z=\dfrac{det(A)}{D_z}=\dfrac{}{5}=3
+          \end{cases}
+        $
+      }
 
   \end{enumerate}
 
