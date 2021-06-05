@@ -66,7 +66,175 @@
       $$
       \begin{itemize}
         \item Find $A^{-1}$.
+
+          \textcolor{hwColor}{
+            $
+              A^{-1}=\dfrac{1}{det(A)} adj(A) 
+              \\
+              \\
+              \\
+              adj(A)=\left(A_{ij}\right)^T=\begin{pmatrix}
+                +\begin{vmatrix}
+                  3 & -1
+                  \\
+                  4 & -2
+                \end{vmatrix} & -\begin{vmatrix}
+                  0 & -1 
+                  \\
+                  -3 & -2
+                \end{vmatrix} & +\begin{vmatrix}
+                  0 & 3
+                  \\
+                  -3 & 4
+                \end{vmatrix}
+                \\
+                \\
+                -\begin{vmatrix}
+                  -2 & 1 
+                  \\
+                  4 & -2
+                \end{vmatrix} & +\begin{vmatrix}
+                  -7 & 1
+                  \\
+                  -3 & -2
+                \end{vmatrix} & -\begin{vmatrix}
+                  -7 & -2 
+                  \\
+                  -3 & 4
+                \end{vmatrix} 
+                \\
+                \\
+                +\begin{vmatrix}
+                  -2 & 1
+                  \\
+                  3 & -1
+                \end{vmatrix} & -\begin{vmatrix}
+                  -7 & 1
+                  \\
+                  0 & -1
+                \end{vmatrix} & +\begin{vmatrix}
+                  -7 & -2 
+                  \\
+                  0 & 3
+                \end{vmatrix}
+              \end{pmatrix}^T=\begin{pmatrix}
+                -2 & 3 & 9
+                \\
+                0 & 17 & 34
+                \\
+                -1 & -7 & -21
+              \end{pmatrix}^T 
+              \\
+              \\
+              \\
+              \therefore ~~~~ adj(A)=\begin{pmatrix}
+                -2 & 0 & -1
+                \\
+                3 & 17 & -7
+                \\
+                9 & 34 & -21
+              \end{pmatrix}
+              \\
+              \\
+              \rule{15cm}{1pt}
+              \\
+              \\
+              det(A)=\begin{vmatrix}
+                -7 & -2 & 1
+                \\
+                0 & 3 & -1 
+                \\
+                -3 & 4 & -2
+              \end{vmatrix}
+              =
+              (-7)(-1)^{1+1} \begin{vmatrix}
+                3 & -1
+                \\
+                4 & -2
+              \end{vmatrix}
+              +
+              0 (-1)^{2+1} \begin{vmatrix}
+                -2 & 1
+                \\
+                4 & -2
+              \end{vmatrix}
+              +
+              (-3)(-1)^{3+1} \begin{vmatrix}
+                -2 & 1 
+                \\
+                3 & -1
+              \end{vmatrix}
+              \\
+              \\
+              \\
+              =(-7)(-2)+0+(-3)(-1)
+              \\
+              \\
+              \\
+              \therefore ~~~~ det(A)=17
+              \\
+              \\
+            $
+            Now we can find the inverse matrix: 
+            \\
+            \\
+            $
+              A^{-1}=\dfrac{1}{det(A)} adj(A)=\dfrac{1}{17} \begin{pmatrix}
+                -2 & 0 & -1
+                \\
+                3 & 17 & -7
+                \\
+                9 & 34 & -21
+              \end{pmatrix}=\begin{pmatrix}
+                -\dfrac{2}{17} & 0 & -\dfrac{1}{17}
+                \\
+                \\
+                \dfrac{3}{17} & 1 & -\dfrac{7}{17}
+                \\
+                \\
+                \dfrac{9}{17} & \dfrac{34}{17} & -\dfrac{21}{17}
+              \end{pmatrix}
+            $
+            \\
+            \\
+            Check point:
+            \\
+            \\
+            $
+              A.A^{-1}=\begin{pmatrix}
+                -7 & -2 & 1
+                \\
+                0 & 3 & -1 
+                \\
+                -3 & 4 & -2
+              \end{pmatrix}.\begin{pmatrix}
+                -\dfrac{2}{17} & 0 & -\dfrac{1}{17}
+                \\
+                \\
+                \dfrac{3}{17} & 1 & -\dfrac{7}{17}
+                \\
+                \\
+                \dfrac{9}{17} & \dfrac{34}{17} & -\dfrac{21}{17}
+              \end{pmatrix}=\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                0 & 1 & 0
+                \\
+                0 & 0 & 1
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              \therefore ~~~~ A.A^{-1}=I_{3 \times 3}
+            $
+          }
+
         \item Solve the system $Ax=\left(1, -1, 1\right)^T$.
+
+          \textcolor{hwColor}{
+            I was here
+          }
+        
       \end{itemize}
 
     \item Evaluate the following determinant: 
