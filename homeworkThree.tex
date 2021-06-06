@@ -192,7 +192,19 @@
                 \dfrac{3}{17} & 1 & -\dfrac{7}{17}
                 \\
                 \\
-                \dfrac{9}{17} & \dfrac{34}{17} & -\dfrac{21}{17}
+                \dfrac{9}{17} & 2 & -\dfrac{21}{17}
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              \therefore ~~~~ A^{-1}=\begin{pmatrix}
+                -\dfrac{2}{17} & 0 & -\dfrac{1}{17}
+                \\
+                \\
+                \dfrac{3}{17} & 1 & -\dfrac{7}{17}
+                \\
+                \\
+                \dfrac{9}{17} & 2 & -\dfrac{21}{17}
               \end{pmatrix}
             $
             \\
@@ -214,7 +226,7 @@
                 \dfrac{3}{17} & 1 & -\dfrac{7}{17}
                 \\
                 \\
-                \dfrac{9}{17} & \dfrac{34}{17} & -\dfrac{21}{17}
+                \dfrac{9}{17} & 2 & -\dfrac{21}{17}
               \end{pmatrix}=\begin{pmatrix}
                 1 & 0 & 0
                 \\
@@ -266,7 +278,7 @@
                 \dfrac{3}{17} & 1 & -\dfrac{7}{17}
                 \\
                 \\
-                \dfrac{9}{17} & \dfrac{34}{17} & -\dfrac{21}{17}
+                \dfrac{9}{17} & 2 & -\dfrac{21}{17}
               \end{pmatrix}.\begin{pmatrix}
                 1
                 \\
@@ -284,7 +296,7 @@
                 \dfrac{3}{17}(1)+(1)(-1)+\left(-\dfrac{7}{17}\right)(1)
                 \\
                 \\
-                \dfrac{9}{17} (1)+\dfrac{34}{17}(-1)+\left(-\dfrac{21}{17}\right)(1)
+                \dfrac{9}{17} (1)+2(-1)+\left(-\dfrac{21}{17}\right)(1)
               \end{pmatrix}
               \\
               \\
@@ -314,6 +326,46 @@
           3 & 2 & 1
         \end{pmatrix}
       $$
+
+        \textcolor{hwColor}{
+          $
+            det\begin{pmatrix}
+              1 & 2 & 3
+              \\
+              1 & -1 & 1
+              \\
+              3 & 2 & 1
+            \end{pmatrix}=1(-1)^{1+1} \begin{vmatrix}
+              -1 & 1 
+              \\
+              2 & 1
+            \end{vmatrix}
+            +2(-1)^{1+2} \begin{vmatrix}
+              1 & 1 
+              \\
+              3 & 1
+            \end{vmatrix}
+            +3 (-1)^{1+3} \begin{vmatrix}
+              1 & -1 
+              \\
+              3 & 2
+            \end{vmatrix}
+            \\
+            \\
+            \\
+            =\left(-1-2\right)+(-2)\left(1-3\right)+3\left(2+3\right)=-3+4+15
+            \\
+            \\
+            \\
+            \therefore ~~~~ det\begin{pmatrix}
+              1 & 2 & 3
+              \\
+              1 & -1 & 1
+              \\
+              3 & 2 & 1
+            \end{pmatrix}=16
+          $
+        }
 
     \item Find the eigenvalues and associated eigenvectors of a given matrix $A$.
     
