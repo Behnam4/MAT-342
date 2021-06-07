@@ -638,6 +638,122 @@
               \\
               1 & -2 & 2
             \end{pmatrix}
+            \\
+            \\
+            \\
+            \lambda I=\lambda \begin{pmatrix}
+              1 & 0 & 0
+              \\
+              0 & 1 & 0
+              \\
+              0 & 0 & 1
+            \end{pmatrix}=\begin{pmatrix}
+              \lambda & 0 & 0
+              \\
+              0 & \lambda & 0
+              \\
+              0 & 0 & \lambda
+            \end{pmatrix}
+            \\
+            \\
+            \\
+            A-\lambda I=\begin{pmatrix}
+              -2 & 0 & 0 
+              \\
+              3 & 7 & 2 
+              \\
+              1 & -2 & 2
+            \end{pmatrix}-\begin{pmatrix}
+              \lambda & 0 & 0
+              \\
+              0 & \lambda & 0
+              \\
+              0 & 0 & \lambda
+            \end{pmatrix}=\begin{pmatrix}
+              -2-\lambda & 0 & 0
+              \\
+              3 & 7-\lambda & 2
+              \\
+              1 & -2 & 2-\lambda
+            \end{pmatrix}
+            \\
+            \\
+            \\
+            \\
+            det\left(A-\lambda I\right)=\begin{vmatrix}
+              -2-\lambda & 0 & 0
+              \\
+              3 & 7-\lambda & 2
+              \\
+              1 & -2 & 2-\lambda
+            \end{vmatrix}=\left(-2-\lambda\right) (-1)^{1+1} \begin{vmatrix}
+              7-\lambda & 2
+              \\
+              -2 & 2-\lambda
+            \end{vmatrix}
+            \\
+            \\
+            \\
+            =\left(-2-\lambda\right) \left(7-\lambda\right) \left(2-\lambda\right)+4
+            =-\lambda^3+7\lambda^2-36=\left(-\lambda-2\right) \left(\lambda-3\right) \left(\lambda-6\right)
+            \\
+            \\
+            \\
+            det\left(A-\lambda I\right)=\left(-\lambda-2\right) \left(\lambda-3\right) \left(\lambda-6\right)=0
+            \\
+            \\
+            \begin{cases}
+              \lambda=-2
+              \\
+              \lambda=3
+              \\
+              \lambda=6
+            \end{cases}
+          $
+          \\
+          \\
+          Now we need to find the corresponding eigenvectors for each of the above eigenvalues.
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          $
+            \lambda=-2 \Longrightarrow A-\lambda I=\begin{vmatrix}
+              0 & 0 & 0
+              \\
+              3 & 9 & 2
+              \\
+              1 & -2 & 4
+            \end{vmatrix}
+          $
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          $
+            \lambda=3 \Longrightarrow A-\lambda I=\begin{vmatrix}
+              -5 & 0 & 0
+              \\
+              3 & 4 & 2
+              \\
+              1 & -2 & -1
+            \end{vmatrix}
+          $
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          $
+            \lambda=6 \Longrightarrow A-\lambda I=\begin{vmatrix}
+              -8 & 0 & 0
+              \\
+              3 & 1 & 2
+              \\
+              1 & -2 & -4
+            \end{vmatrix}
           $
         }
 
