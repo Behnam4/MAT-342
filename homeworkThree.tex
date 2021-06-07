@@ -850,7 +850,102 @@
               \\
               1 & -2 & -1
             \end{pmatrix}
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              -5 & 0 & 0 & 0
+              \\
+              3 & 4 & 2 & 0
+              \\
+              1 & -2 & -1 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            -\dfrac{R_1}{5} \rightarrow R_1
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              3 & 4 & 2 & 0
+              \\
+              1 & -2 & -1 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_2-3R_1 \rightarrow 
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              0 & 4 & 2 & 0
+              \\
+              1 & -2 & -1 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3-R_1 \rightarrow R_3
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              0 & 4 & 2 & 0
+              \\
+              0 & -2 & -1 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3+R_2 \rightarrow R_3
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              0 & 1 & \dfrac{1}{2} & 0
+              \\
+              0 & 0 & 0 & 0
+            \end{array}\right)
+            \\
+            \\
+            \\
+            \Longrightarrow \begin{cases}
+              x_1=0
+              \\
+              \\
+              x_2+\dfrac{1}{2}x_3=0
+            \end{cases} \Longrightarrow X=\begin{pmatrix}
+              0
+              \\
+              -\dfrac{1}{2} x_3
+              \\
+              x_3
+            \end{pmatrix}
           $
+          \\
+          \\
+          Let's set $x_3=1$ then we have $X=\begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}$
           \\
           \\
           \rule{15cm}{3pt}
@@ -864,6 +959,113 @@
               \\
               1 & -2 & -4
             \end{pmatrix}
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            -\dfrac{1}{8}R_1 \rightarrow R_1
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              3 & 1 & 2 & 0
+              \\
+              1 & -2 & -4 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_2-3R_1 \rightarrow R_2
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              0 & 1 & 2 & 0
+              \\
+              1 & -2 & -4 & 0
+            \end{array}\right)
+            \\
+            \\
+            \rule{15cm}{1pt}
+            \\
+            \\
+            R_3+2R_2 \rightarrow R_3
+            \\
+            \\
+            \left(\begin{array}{ccc|c}
+              1 & 0 & 0 & 0
+              \\
+              0 & 1 & 2 & 0
+              \\
+              0 & 0 & 0 & 0
+            \end{array}\right)
+            \\
+            \\
+            \\
+            \Longrightarrow \begin{cases}
+              x_1=0
+              \\
+              x_2+2x_3=0
+            \end{cases} \Longrightarrow X=\begin{pmatrix}
+              0
+              \\
+              -2x_3
+              \\
+              x_3
+            \end{pmatrix}
+          $
+          \\
+          \\
+          Let's set $x_3=1$ then we have $X=\begin{pmatrix}
+            0
+            \\
+            -2
+            \\
+            1
+          \end{pmatrix}$
+          \\
+          \\
+          \\
+          \\
+          $
+            \therefore ~~~~~ \begin{cases}
+              \lambda=-2 \Longrightarrow X=\begin{pmatrix}
+                -\dfrac{8}{3}
+                \\
+                \\
+                \dfrac{3}{2}
+                \\
+                \\
+                1
+              \end{pmatrix}
+              \\
+              \\
+              \lambda=3 \Longrightarrow X=\begin{pmatrix}
+                0
+                \\
+                \\
+                -\dfrac{1}{2}
+                \\
+                \\
+                1
+              \end{pmatrix}
+              \\
+              \\
+              \lambda=6 \Longrightarrow X=\begin{pmatrix}
+                0
+                \\
+                \\
+                -2
+                \\
+                \\
+                1
+              \end{pmatrix}
+            \end{cases}
           $
         }
 
