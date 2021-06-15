@@ -66,6 +66,241 @@
       \end{pmatrix}
     $$
 
+      \textcolor{hwColor}{
+        We start by putting the matrix in row echelon form. \\
+        \\
+        $
+          A=\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            2 & 1 & 3 & 2
+            \\
+            3 & 4 & 5 & 5
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -2R_1+R_2 \rightarrow R_2
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & -5 & 7 & 0
+            \\
+            3 & 4 & 5 & 5
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -3R_1+R_3 \rightarrow R_3
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & -5 & 7 & 0
+            \\
+            0 & -5 & 11 & 2
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -\dfrac{1}{5}R_2 \rightarrow R_2
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & 1 & -\dfrac{7}{5} & 0
+            \\
+            0 & -5 & 11 & 2
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          5R_2+R_3 \rightarrow R_3
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & 1 & -\dfrac{7}{5} & 0
+            \\
+            0 & 0 & 4 & 2
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \dfrac{1}{4}R_3 \rightarrow R_3
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & 1 & -\dfrac{7}{5} & 0
+            \\
+            0 & 0 & 1 & \dfrac{1}{2}
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \dfrac{7}{5}R_3+R_2 \rightarrow R_2
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & -2 & 1
+            \\
+            0 & 1 & 0 & \dfrac{7}{10}
+            \\
+            0 & 0 & 1 & \dfrac{1}{2}
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          2R_3+R_1 \rightarrow R_1
+          \\
+          \\
+          =\begin{pmatrix}
+            1 & 3 & 0 & 2
+            \\
+            0 & 1 & 0 & \dfrac{7}{10}
+            \\
+            0 & 0 & 1 & \dfrac{1}{2}
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -3R_2+R_1 \rightarrow R_1
+          \\
+          \\
+          \therefore ~~~~~ A=\begin{pmatrix}
+            1 & 0 & 0 & -\dfrac{1}{10}
+            \\
+            \\
+            0 & 1 & 0 & \dfrac{7}{10}
+            \\
+            \\
+            0 & 0 & 1 & \dfrac{1}{2}
+          \end{pmatrix}
+        $
+        \\
+        \\
+        Row operations do not change the row space, so the rows of the matrix at the end have the same span
+        as our given matrix. Furthermore, the nonzero rows of a matrix in row echelon form are linearly independent.
+        Therefore, the row space has a basis: \\
+        \\
+        $\{  \left[1, 0, 0, -\dfrac{1}{10}\right], \left[0, 1, 0, \dfrac{7}{10}\right], \left[0, 0, 1, \dfrac{1}{2}\right] \}$
+        \\
+        \\
+        From the final matrix, it is clear that the first, second, and third columns 
+        of the matrix are the pivot columns. Thus, the first, second, and third columns
+        of the original matrix form a basis for the column space.
+        \\
+        \\
+        $
+          \{ 
+            \begin{bmatrix}
+              1
+              \\
+              2
+              \\
+              3
+            \end{bmatrix},
+            \begin{bmatrix}
+              3
+              \\
+              1
+              \\
+              4
+            \end{bmatrix},
+            \begin{bmatrix}
+              -2
+              \\
+              3
+              \\
+              5
+            \end{bmatrix} 
+          \}
+          \\
+          \\
+        $
+        Finally, the row space and column space each have bases with three vectors, 
+        so they have dimension three. Therefore, the rank of $A$ is $3$.
+        \\
+        \\
+        We already found the reduced row echelon form of the of given matrix. Now, we can write the following 
+        system of euqations:
+        \\
+        \\
+        $
+          \begin{cases}
+            x_1-\dfrac{1}{10}x_4=0
+            \\
+            \\
+            x_2+\dfrac{7}{10}x_4=0
+            \\
+            \\
+            x_3+\dfrac{1}{2}x_4=0
+          \end{cases}
+        $
+        \\
+        \\
+        This system has infinity solutions. One solution can be written as the following:
+        \\
+        \\
+        $
+          \begin{cases}
+            x_1=\dfrac{1}{10}
+            \\
+            \\
+            x_2=-\dfrac{7}{10}
+            \\
+            \\
+            x_3=-\dfrac{1}{2}
+            \\
+            \\
+            x_4=1
+          \end{cases}
+        $
+        \\
+        \\
+        Therefore the null space has a basis formed by the set 
+        $
+          \{ 
+            \begin{pmatrix}
+              \dfrac{1}{10}
+              \\
+              \\
+              -\dfrac{7}{10}
+              \\
+              \\
+              -\dfrac{1}{2}
+              \\
+              \\
+              1
+            \end{pmatrix}
+          \}
+        $.
+      }
+   
+
     \item (2 points) Determine whether the following set form a subspace in $\mathbb{R}^4$:
     $$
       \{ \left(x_1, x_2, x_3, x_4\right)^T \text{such that } x_1-x_2-x_3-x_4=0, ~ x_1+x_2+x_3-x_4=0 \} 
