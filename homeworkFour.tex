@@ -308,8 +308,54 @@
 
     \item (2 points) Are the vectors $v_1=(5, -1, 7), ~ v_2=(-3, 2, -9),$ and $v_3=(1, -2, 4)$ linearly independent? Explain.
     
+      \textcolor{hwColor}{
+        These vectors will be linearly independent if the deteminent of matrix form by these vectors is not zero.
+        \\
+        \\
+        $
+          A=\begin{bmatrix}
+            5 & -1 & 7
+            \\
+            -3 & 2 & -9 
+            \\
+            1 & -2 & 4
+          \end{bmatrix}
+          \\
+          \\
+          \\
+          det(A)=\begin{vmatrix}
+            5 & -1 & 7
+            \\
+            -3 & 2 & -9 
+            \\
+            1 & -2 & 4
+          \end{vmatrix}=
+          5(-1)^{1+1} \begin{vmatrix}
+            2 & -9
+            \\
+            -2 & 4
+          \end{vmatrix}
+          +(-1)(-1)^{1+2} \begin{vmatrix}
+            -3 & -9 
+            \\
+            1 & 4
+          \end{vmatrix}
+          +7(-1)^{1+1} \begin{vmatrix}
+            -3 & 2
+            \\
+            1 & -2
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          \therefore ~~~~ det(A)=-25
+        $
+        \\
+        \\
+        Hence, these vectors are linearly independent.
+      }
 
-    \item (3 points) Let $v_1, v_2, v_3$ be lineary independence vectors in $\mathbb{R}^n$ and let
+    \item (3 points) Let $v_1, v_2, v_3$ be linearly independence vectors in $\mathbb{R}^n$ and let
     $$
       u_1=v_1+v_2, ~~~~~ u_2=v_2+v_3, ~~~~~ u_3=v_3+v_1
     $$
