@@ -1,0 +1,82 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Linear Algebra }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Quiz Three}\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \begin{enumerate}
+    \item (10 points) Are the vectors $v_1=(7, -1, 3), ~ v_2=(-3, 2, -5),$ and $v_3=(-1, 2, -4)$ linearly independent? Explain.
+
+
+    \item (10 points) Find the matrix representation of the following linear transformation $L:\mathbb{R}^3 \rightarrow \mathbb{R}^2$.
+    $$L(x)=\left(x_1-x_2, x_2+x_3\right)^T$$
+    Determine the kernel, $L(x)=0$ of this transformation.
+
+
+    \item (15 points) Show that the set of powers $1, x, x^2, x^3$ form a basis in the subspace of all polynomials of degree $\leq 3$. 
+    [Hint: You may use the Vandermonde determinant.]
+
+
+    \item (15 points) Find both a basis for the row space and a basis for the column space of the matrix
+    $$
+      \begin{pmatrix}
+        2 & -4 & 2 & -7
+        \\
+        -2 & 1 & 1 & 0
+        \\
+        -1 & 2 & -1 & 4
+      \end{pmatrix}
+    $$
+    What is the rank of this matrix? Find the nullspace basis of this m
+  \end{enumerate}
+
+\end{document}
