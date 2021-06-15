@@ -301,10 +301,10 @@
       }
    
 
-    \item (2 points) Determine whether the following set form a subspace in $\mathbb{R}^4$:
-    $$
-      \{ \left(x_1, x_2, x_3, x_4\right)^T \text{such that } x_1-x_2-x_3-x_4=0, ~ x_1+x_2+x_3-x_4=0 \} 
-    $$
+    % \item (2 points) Determine whether the following set form a subspace in $\mathbb{R}^4$:
+    % $$
+    %   \{ \left(x_1, x_2, x_3, x_4\right)^T \text{such that } x_1-x_2-x_3-x_4=0, ~ x_1+x_2+x_3-x_4=0 \} 
+    % $$
 
     \item (2 points) Are the vectors $v_1=(5, -1, 7), ~ v_2=(-3, 2, -9),$ and $v_3=(1, -2, 4)$ linearly independent? Explain.
     
@@ -360,6 +360,63 @@
       u_1=v_1+v_2, ~~~~~ u_2=v_2+v_3, ~~~~~ u_3=v_3+v_1
     $$
     Are the vectors $u_1, u_2, u_3$ linearly independent? Prove your answer.
+
+      \textcolor{hwColor}{
+        Let's start off with: \\
+        \\
+        $
+          c_1u_1+c_2u_2+c_3u_3=0
+          \\
+          \\
+          c_1\left(v_1+v_2\right)+c_2\left(v_2+v_3\right)+c_3\left(v_3+v_1\right)=0
+          \\
+          \\
+          \left(c_1+c_3\right)v_1+\left(c_1+c_2\right)v_2+\left(c_2+c_3\right)v_3=0
+          \\
+          \\
+          \\
+          \therefore ~~~~ \begin{cases}
+            c_1+c_3=0
+            \\
+            c_1+c_2=0
+            \\
+            c_2+c_3=0
+          \end{cases} \Longrightarrow \begin{pmatrix}
+            1 & 0 & 1
+            \\
+            1 & 1 & 0
+            \\
+            0 & 1 & 1
+          \end{pmatrix} \begin{pmatrix}
+            c_1
+            \\
+            c_2
+            \\
+            c_3
+          \end{pmatrix}=\begin{pmatrix}
+            0
+            \\
+            0
+            \\
+            0
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          \begin{vmatrix}
+            1 & 0 & 1
+            \\
+            1 & 1 & 0
+            \\
+            0 & 1 & 1
+          \end{vmatrix} \neq 0 ~~~~ \checkmark
+        $
+        \\
+        \\
+        So the system of equation has only zero solution when $c_1=c_2=c_3=0$. Hence, $\{u_1, u_2, u_3\}$
+        is linearly independent set.
+      }
+
   \end{enumerate}
 
 \end{document}
