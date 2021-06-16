@@ -255,6 +255,120 @@
     $$L(x)=\left(x_1-x_2, x_2+x_3\right)^T$$
     Determine the kernel, $L(x)=0$ of this transformation.
 
+      \textcolor{hwColor}{
+        \\
+        \\
+        $L:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ is a linear transformation defined by $L(x)=\left(x_1-x_2, x_2+x_3\right)^T$.
+        \\
+        \\
+        We know the basis vectors for $\mathbb{R}^3$ are $e_1=(1, 0, 0), e_2=(0, 1, 0)$ and $e_3=(0, 0, 1)$.
+        Based on the given transformation we have:
+        \\
+        \\
+        $
+        L\left(\begin{bmatrix}
+          x_1 
+          \\
+          x_2
+          \\
+          x_3
+        \end{bmatrix}\right)=L\left(\begin{bmatrix}
+            x_1-x_2 
+            \\
+            x_2+x_3
+          \end{bmatrix}\right)
+          \\
+          \\
+          \Longrightarrow 
+          \begin{cases}
+            L\left[(e_1)^T\right]=T\left(\begin{bmatrix}
+              1 
+              \\
+              0
+              \\
+              0
+            \end{bmatrix}\right)=\begin{bmatrix}
+              1-0
+              \\
+              0+0
+            \end{bmatrix}=\begin{bmatrix}
+              1
+              \\
+              0
+            \end{bmatrix}=1\begin{bmatrix}
+              1
+              \\
+              0
+            \end{bmatrix}+0\begin{bmatrix}
+              0
+              \\
+              1
+            \end{bmatrix}
+            \\
+            \\
+            L\left[(e_2)^T\right]=T\left(\begin{bmatrix}
+              0 
+              \\
+              1
+              \\
+              0
+            \end{bmatrix}\right)=\begin{bmatrix}
+              0-1
+              \\
+              1+0
+            \end{bmatrix}=\begin{bmatrix}
+              -1
+              \\
+              1
+            \end{bmatrix}=-1\begin{bmatrix}
+              1
+              \\
+              0
+            \end{bmatrix}+1\begin{bmatrix}
+              0
+              \\
+              1
+            \end{bmatrix}
+            \\
+            \\
+            L\left[(e_3)^T\right]=T\left(\begin{bmatrix}
+              0 
+              \\
+              0
+              \\
+              1
+            \end{bmatrix}\right)=\begin{bmatrix}
+              0-0
+              \\
+              0+1
+            \end{bmatrix}=\begin{bmatrix}
+              0
+              \\
+              1
+            \end{bmatrix}=0\begin{bmatrix}
+              1
+              \\
+              0
+            \end{bmatrix}+1\begin{bmatrix}
+              0
+              \\
+              1
+            \end{bmatrix}
+          \end{cases}
+        $
+        \\
+        \\
+        \\
+        Therefore, the matrix for L relative to the standard bases is
+        $
+          \begin{pmatrix}
+            1 & -1 & 0
+            \\
+            0 & 1 & 1
+          \end{pmatrix}
+        $
+        $\blacksquare$
+      }
 
     \item (15 points) Show that the set of powers $1, x, x^2, x^3$ form a basis in the subspace of all polynomials of degree $\leq 3$. 
     [Hint: You may use the Vandermonde determinant.]
