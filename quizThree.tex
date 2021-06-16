@@ -367,7 +367,37 @@
             0 & 1 & 1
           \end{pmatrix}
         $
-        $\blacksquare$
+        \\
+        \\
+        \\
+        Recall that the kernel of a transformation is the subset of the domain which maps into the zero vector.
+        Depending on what we pick for $x_3$ we have the following:
+        \\
+        \\
+        $
+          L(x)=\begin{bmatrix}
+            x_1-x_2
+            \\
+            x_2+x_3
+          \end{bmatrix}=\begin{bmatrix}
+            0
+            \\
+            0
+          \end{bmatrix}
+          \Longrightarrow \begin{cases}
+            x_1=x_2
+            \\
+            x_2=-x_3
+          \end{cases}
+          \\
+          \\
+        $
+        If $x_3=1$ then we have: 
+        \\
+        \\
+        $
+          ker(L)=\left(1, 1, -1\right) ~~~~~ \blacksquare
+        $
       }
 
     \item (15 points) Show that the set of powers $1, x, x^2, x^3$ form a basis in the subspace of all polynomials of degree $\leq 3$. 
@@ -519,7 +549,7 @@
         \textbf{Basis of Row Space:} \\
         Row operations do not change the row space, so the rows of the matrix at the end have
         the same span as our given matrix. Furthermore, the nonzero rows of a matrix in row echelon
-        form are linearly independent. Tows that contain the leading are first, second and third rows:
+        form are linearly independent. Rows that contain the leading are first, second and third rows:
         \\
         \\
         $
