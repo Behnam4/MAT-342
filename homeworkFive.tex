@@ -1,0 +1,187 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Linear Algebra }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Homework Five}\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \begin{enumerate}
+    \item (15 points) Solve the system of linear equations 
+    $$
+      \begin{cases}
+        x+y+z-w=2
+        \\
+        x-y+z+w=6
+        \\
+        x+y+3z-2w=4
+        \\
+        -x+y-2z+w=-1
+      \end{cases}
+    $$
+
+    \item 
+    $$
+      A=\begin{pmatrix}
+        1 & 0 & 0
+        \\
+        1 & -1 & 0
+        \\
+        1 & 3 & 2
+      \end{pmatrix} ~~~
+      and ~~~
+      B=\begin{pmatrix}
+        2 & -1 & 2
+        \\
+        2 & -2 & 1
+        \\
+        1 & -1 & 3
+      \end{pmatrix}
+    $$
+    
+      \begin{itemize}
+        \item (10 points) Find $AB, BA$ and $AB-BA$.
+        \item (15 points) Does $A^{-1}$ exist? Does $B^{-1}$ exist? If so, find them.
+      \end{itemize}
+
+    \item (10 points) Find
+    $$
+      det \begin{pmatrix}
+        1 & -3 & 2 & 0
+        \\
+        -1 & 4 & 3 & 1
+        \\
+        1 & 3 & -3 & 1
+        \\
+        0 & 2 & 1 & -1
+      \end{pmatrix}
+    $$
+
+    \item (10 points) Are the vectors $v_1=(2, -1, 2), ~~ v_2=(2, -2, 1),$ and $v_3=(1, -1, 3)$ linearly independent?
+
+    \item (10 points) Use Cramer’s rule to determine the solutions, if any exist, to the following system
+    of equations.
+    $$
+      \begin{cases}
+        2x-y+z=1
+        \\
+        x+2y-z=2
+        \\
+        -x+y+z=3
+      \end{cases}
+    $$
+    
+
+    \item (10 points) Verify the Cauchy–Schwarz inequality $|u.v| \leq ||u||.||v||$ for the 
+    vectors $u=(1, -2, -3, 4)$ and $v=(-1, -2, 2, 1)$ using the standard inner product in $R^4$.
+    Find the angle between these vectors.
+
+    \item (15 points) Convert the basis $v_1=(1, -1, 0), v_2=(0, 1, -1), v_3=(1, 0, -1)$ for $R^3$ into 
+    an orthonormal basis, using the Gram–Schmidt process and the standard inner product in $R^3$.
+
+    \item Find the eigenvalues and associated eigenvectors of a given matrix $A$.
+      \begin{itemize}
+        \item (10 points) $A=\begin{pmatrix}
+          3 & -1
+          \\
+          1 & 4
+        \end{pmatrix}$.
+
+        \item (15 points) $A=\begin{pmatrix}
+          1 & 2 & 1 
+          \\
+          0 & 3 & 1 
+          \\
+          0 & 5 & -1
+        \end{pmatrix}$
+      \end{itemize}
+
+
+    \item (15 points) Find both a basis for the row space and a basis for the column space of the
+    matrix
+    $$
+      \begin{pmatrix}
+        1 & 3 & -1 & -1
+        \\
+        2 & 1 & -2 & 0
+        \\
+        3 & 4 & -3 & 2
+      \end{pmatrix}
+    $$
+    What is the rank of this matrix?
+
+
+    \item (5 points each) Let $L: \mathbb{R}^2 \rightarrow \mathbb{R}^3$ be a function given by $L(x,y)=(x-y, x+2y, 3x-2y)$.
+      \begin{itemize}
+        \item Show that $L$ is a linear transformation.
+        \item Find the kernel of $L$.
+        \item Find a basis for the range of the transformation $L$.
+        \item Find the standard matrix representation of the transformation $L$. (Use the standard bases for $\mathbb{R}^2 \rightarrow \mathbb{R}^3$.)
+      \end{itemize}
+
+
+    \item (15 points) (The Pythagorean Law) Prove that if $\mathbf{u}$ and $\mathbf{v}$ are orthogonal vectors in an inner
+    product space $V$, then $||\mathbf{u}+\mathbf{v}||^2=||\mathbf{u}||^2+||\mathbf{v}||^2$.
+
+
+    \item (15 points) Write the explicit forms of the Pythagorean Law and the orthogonality relation
+    in the vector space of continuous functions $\mathsf{C}\left[a, b\right]$  with inner product defined by:
+    
+    $(f,g)=\bigints\limits_{a}^{b} f(x) g(x) dx$.
+
+
+
+    \item (15 points) Let $A$ be an $n \times n$ invertible matrix, let $\lambda \neq 0$ be an eigenvalue of $A$,
+    and let $x$ be an eigenvector belonging to $\lambda$: $A x=\lambda x$. Use mathematical induction to show that
+    $\lambda^{-m}$ is an eigenvalue of $A^{-m}=(A^{-1})^m$ and $x$ is an eigenvector of $A^{-m}$ belonging to $\lambda^{-m}$.  
+
+  \end{enumerate}
+
+\end{document}
