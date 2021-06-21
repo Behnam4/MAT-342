@@ -299,134 +299,428 @@
       \begin{itemize}
         \item (10 points) Find $AB, BA$ and $AB-BA$.
         
-        \textcolor{hwColor}{
-          \\
-          \\
-          $
-            AB=
-            \begin{pmatrix}
-              1 & 0 & 0
-              \\
-              1 & -1 & 0
-              \\
-              1 & 3 & 2
-            \end{pmatrix}
-            \begin{pmatrix}
-              2 & -1 & 2
-              \\
-              2 & -2 & 1
-              \\
-              1 & -1 & 3
-            \end{pmatrix}
+          \textcolor{hwColor}{
             \\
             \\
-            \\
-            =\begin{pmatrix}
-              (1 \times 2 )+( 0 \times 2 )+( 0 \times 1 ) & ( 1 \times -1 )+( 0 \times -2 )+( 0 \times -1 ) & ( 1 \times 2 )+( 0 \times 1 )+( 0 \times 3 )
+            $
+              AB=
+              \begin{pmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                1 & 3 & 2
+              \end{pmatrix}
+              \begin{pmatrix}
+                2 & -1 & 2
+                \\
+                2 & -2 & 1
+                \\
+                1 & -1 & 3
+              \end{pmatrix}
               \\
               \\
-              ( 1 \times 2 )+( -1 \times 2 )+( 0 \times 1 ) & ( 1 \times -1 )+( -1 \times -2 )+( 0 \times -1 ) & ( 1 \times 2 )+( -1 \times 1 )+( 0 \times 3 )
+              \\
+              =\begin{pmatrix}
+                (1 \times 2 )+( 0 \times 2 )+( 0 \times 1 ) & ( 1 \times -1 )+( 0 \times -2 )+( 0 \times -1 ) & ( 1 \times 2 )+( 0 \times 1 )+( 0 \times 3 )
+                \\
+                \\
+                ( 1 \times 2 )+( -1 \times 2 )+( 0 \times 1 ) & ( 1 \times -1 )+( -1 \times -2 )+( 0 \times -1 ) & ( 1 \times 2 )+( -1 \times 1 )+( 0 \times 3 )
+                \\
+                \\
+                ( 1 \times 2 )+( 3 \times 2 )+( 2 \times 1 ) & ( 1 \times -1 )+( 3 \times -2 )+( 2 \times -1 ) & ( 1 \times 2 )+( 3 \times 1)+( 2 \times 3 )
+              \end{pmatrix}
               \\
               \\
-              ( 1 \times 2 )+( 3 \times 2 )+( 2 \times 1 ) & ( 1 \times -1 )+( 3 \times -2 )+( 2 \times -1 ) & ( 1 \times 2 )+( 3 \times 1)+( 2 \times 3 )
-            \end{pmatrix}
-            \\
-            \\
-            \\
-            \therefore ~~~~ AB=\begin{pmatrix}
-              2 & -1 & 2
               \\
-              0 & 1 & 1
-              \\
-              10 & -9 & 11
-            \end{pmatrix}
-            \\
-            \\
-            \rule{15cm}{1pt}
-            \\
-            \\
-            BA=\begin{pmatrix}
-              2 & -1 & 2
-              \\
-              2 & -2 & 1
-              \\
-              1 & -1 & 3
-            \end{pmatrix}\begin{pmatrix}
-              1 & 0 & 0
-              \\
-              1 & -1 & 0
-              \\
-              1 & 3 & 2
-            \end{pmatrix}
-            \\
-            \\
-            \\
-            =\begin{pmatrix}
-              ( 2 \times 1 )+( -1 \times 1 )+( 2 \times 1 ) & ( 2 \times 0 )+( -1 \times -1 )+( 2 \times 3 ) & ( 2 \times 0 )+( -1 \times 0 )+( 2 \times 2 )
+              \therefore ~~~~ AB=\begin{pmatrix}
+                2 & -1 & 2
+                \\
+                0 & 1 & 1
+                \\
+                10 & -9 & 11
+              \end{pmatrix}
               \\
               \\
-              ( 2 \times 1 )+( -2 \times 1 )+( 1 \times 1 ) & ( 2 \times 0 )+( -2 \times -1 )+( 1 \times 3 ) & ( 2 \times 0 )+( -2 \times 0 )+( 1 \times 2 )
+              \rule{15cm}{1pt}
               \\
               \\
-              ( 1 \times 1 )+( -1 \times 1 )+( 3 \times 1 ) & ( 1 \times 0 )+( -1 \times -1 )+( 3 \times 3 ) & ( 1 \times 0 )+( -1 \times 0 )+( 3 \times 2 )
-            \end{pmatrix}
-            \\
-            \\
-            \\
-            \therefore ~~~~ BA=\begin{pmatrix}
-              3 & 7 & 4
+              BA=\begin{pmatrix}
+                2 & -1 & 2
+                \\
+                2 & -2 & 1
+                \\
+                1 & -1 & 3
+              \end{pmatrix}\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                1 & 3 & 2
+              \end{pmatrix}
               \\
-              1 & 5 & 5 
               \\
-              3 & 10 & 6
-            \end{pmatrix}
-            \\
-            \\
-            \rule{15cm}{1pt}
-            \\
-            \\
-            AB-BA=\begin{pmatrix}
-              2 & -1 & 2
               \\
-              0 & 1 & 1
+              =\begin{pmatrix}
+                ( 2 \times 1 )+( -1 \times 1 )+( 2 \times 1 ) & ( 2 \times 0 )+( -1 \times -1 )+( 2 \times 3 ) & ( 2 \times 0 )+( -1 \times 0 )+( 2 \times 2 )
+                \\
+                \\
+                ( 2 \times 1 )+( -2 \times 1 )+( 1 \times 1 ) & ( 2 \times 0 )+( -2 \times -1 )+( 1 \times 3 ) & ( 2 \times 0 )+( -2 \times 0 )+( 1 \times 2 )
+                \\
+                \\
+                ( 1 \times 1 )+( -1 \times 1 )+( 3 \times 1 ) & ( 1 \times 0 )+( -1 \times -1 )+( 3 \times 3 ) & ( 1 \times 0 )+( -1 \times 0 )+( 3 \times 2 )
+              \end{pmatrix}
               \\
-              10 & -9 & 11
-            \end{pmatrix}-\begin{pmatrix}
-              3 & 7 & 4
               \\
-              1 & 5 & 5 
               \\
-              3 & 10 & 6
-            \end{pmatrix}
-            =\begin{pmatrix}
-              2-3 & -1-7 & 2-4
+              \therefore ~~~~ BA=\begin{pmatrix}
+                3 & 7 & 4
+                \\
+                1 & 5 & 5 
+                \\
+                3 & 10 & 6
+              \end{pmatrix}
               \\
-              0-1 & 1-5 & 1-5
               \\
-              10-3 & -9-10 & 11-6
-            \end{pmatrix}
-            \\
-            \\
-            \\
-            \therefore ~~~~ AB-BA=\begin{pmatrix}
-              -1 & -8 & -2
+              \rule{15cm}{1pt}
               \\
-              -1 & -4 & -4
               \\
-              7 & -19 & 5
-            \end{pmatrix}
-            \\
-            \\
-          $
-        }
+              AB-BA=\begin{pmatrix}
+                2 & -1 & 2
+                \\
+                0 & 1 & 1
+                \\
+                10 & -9 & 11
+              \end{pmatrix}-\begin{pmatrix}
+                3 & 7 & 4
+                \\
+                1 & 5 & 5 
+                \\
+                3 & 10 & 6
+              \end{pmatrix}
+              =\begin{pmatrix}
+                2-3 & -1-7 & 2-4
+                \\
+                0-1 & 1-5 & 1-5
+                \\
+                10-3 & -9-10 & 11-6
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              \therefore ~~~~ AB-BA=\begin{pmatrix}
+                -1 & -8 & -2
+                \\
+                -1 & -4 & -4
+                \\
+                7 & -19 & 5
+              \end{pmatrix}
+              \\
+              \\
+            $
+          }
 
         \item (15 points) Does $A^{-1}$ exist? Does $B^{-1}$ exist? If so, find them.
 
-        \textcolor{hwColor}{
-          \\
-          \\
-          Second
-        }
+          \textcolor{hwColor}{
+            \\
+            If the determinant of a matrix is \textbf{NOT} zero, then the matrix has an inverse matrix. So let's find the 
+            determinant of matrices $A$ and $B$.
+            \\
+            \\
+            $
+              A^{-1}=\dfrac{1}{det(A)} adj(A)
+              \\
+              \\
+              \\
+              det(A)=\begin{vmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                1 & 3 & 2
+              \end{vmatrix}=1 (-1)^{1+1} \begin{vmatrix}
+                -1 & 0
+                \\
+                3 & 2
+              \end{vmatrix}
+              +0(-1)^{1+2} \begin{vmatrix}
+                1 & 0
+                \\
+                1 & 2
+              \end{vmatrix}
+              +0(-1)^{1+2} \begin{vmatrix}
+                1 & -1
+                \\
+                1 & 3
+              \end{vmatrix}
+              \\
+              \\
+              =\left[(-1 \times 2)-(0 \times 3)\right]
+              \\
+              \\
+              \\
+              \therefore ~~~~ det(A)=-2 
+              \\
+              \\
+              adj(A)=(A_{ij})^T=\begin{pmatrix}
+                +\begin{vmatrix}
+                  -1 & 0
+                  \\
+                  3 & 2
+                \end{vmatrix} & -\begin{vmatrix}
+                  1 & 0 
+                  \\
+                  1 & 2
+                \end{vmatrix} & +\begin{vmatrix}
+                  1 & -1 
+                  \\
+                  1 & 3
+                \end{vmatrix}
+                \\
+                \\
+                -\begin{vmatrix}
+                  0 & 0
+                  \\
+                  3 & 2
+                \end{vmatrix} & +\begin{vmatrix}
+                  1 & 0 
+                  \\
+                  1 & 2
+                \end{vmatrix} & -\begin{vmatrix}
+                  1 & 0
+                  \\
+                  1 & 3
+                \end{vmatrix}
+                \\
+                \\
+                +\begin{vmatrix}
+                  0 & 0
+                  \\
+                  -1 & 0
+                \end{vmatrix} & -\begin{vmatrix}
+                  1 & 0
+                  \\
+                  1 & 0
+                \end{vmatrix} & +\begin{vmatrix}
+                  1 & 0
+                  \\
+                  1 & -1
+                \end{vmatrix}
+              \end{pmatrix}^T
+              \\
+              \\
+              \\
+              =\begin{pmatrix}
+                -2 & -2 & 4
+                \\
+                0 & 2 & -3
+                \\
+                0 & 0 & -1
+              \end{pmatrix}^T \Longrightarrow adj(A)=\begin{pmatrix}
+                -2 & 0 & 0
+                \\
+                -2 & 2 & 0
+                \\
+                4 & -3 & -1
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              A^{-1}=\dfrac{1}{det(A)} adj(A)=-\dfrac{1}{2} \begin{pmatrix}
+                -2 & 0 & 0
+                \\
+                -2 & 2 & 0
+                \\
+                4 & -3 & -1
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              \therefore ~~~~ A^{-1}=\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                -2 & \dfrac{3}{2} & \dfrac{1}{2}
+              \end{pmatrix}
+            $
+            \\
+            \\
+            \textbf{Check:}
+            \\
+            \\
+            $
+              A^{-1}A=I \Longrightarrow \begin{pmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                -2 & \dfrac{3}{2} & \dfrac{1}{2}
+              \end{pmatrix}\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                1 & -1 & 0
+                \\
+                1 & 3 & 2
+              \end{pmatrix}=\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                0 & 1 & 0
+                \\
+                0 & 0 & 1
+              \end{pmatrix} ~~~~~ \checkmark
+            $
+            \\
+            \\
+            $
+              B^{-1}=\dfrac{1}{det(B)} adj(B)
+              \\
+              \\
+              \\
+              det(B)=\begin{vmatrix}
+                2 & -1 & 2
+                \\
+                2 & -2 & 1
+                \\
+                1 & -1 & 3
+              \end{vmatrix}
+              =2(-1)^{1+1} \begin{vmatrix}
+                -2 & 1
+                \\
+                -1 & 3
+              \end{vmatrix}
+              +(-1)(-1)^{1+2} \begin{vmatrix}
+                2 & 1
+                \\
+                1 & 3
+              \end{vmatrix}
+              +2(-1)^{1+3} \begin{vmatrix}
+                2 & -2
+                \\
+                1 & -1
+              \end{vmatrix}
+              \\
+              \\
+              =(2 \times -5)+( 1 \times 5 )+( 2 \times 0 )
+              \\
+              \\
+              \\
+              \therefore ~~~~ det(B)=-5
+              \\
+              \\
+              \\
+              adj(B)=(B_{ij})^T=\begin{pmatrix}
+                +\begin{vmatrix}
+                  -2 & 1
+                  \\
+                  -1 & 3
+                \end{vmatrix} & -\begin{vmatrix}
+                  2 & 1
+                  \\
+                  1 & 3
+                \end{vmatrix} & +\begin{vmatrix}
+                  2 & -2
+                  \\
+                  1 & -1
+                \end{vmatrix}
+                \\
+                \\
+                -\begin{vmatrix}
+                  -1 & 2
+                  \\
+                  -1 & 3
+                \end{vmatrix} & +\begin{vmatrix}
+                  2 & 2
+                  \\
+                  1 & 3
+                \end{vmatrix} & -\begin{vmatrix}
+                  2 & -1
+                  \\
+                  1 & -1
+                \end{vmatrix}
+                \\
+                \\
+                +\begin{vmatrix}
+                  -1 & 2
+                  \\
+                  -2 & 1
+                \end{vmatrix} & -\begin{vmatrix}
+                  2 & 2
+                  \\
+                  2 & 1
+                \end{vmatrix} & +\begin{vmatrix}
+                  2 & -1
+                  \\
+                  2 & -2
+                \end{vmatrix}
+              \end{pmatrix}^T
+              \\
+              \\
+              \\
+              =\begin{pmatrix}
+                -5 & -5 & 0
+                \\
+                1 & 4 & 1
+                \\
+                3 & 2 & -2
+              \end{pmatrix}^T \Longrightarrow adj(B)=\begin{pmatrix}
+                -5 & 1 & 3
+                \\
+                -5 & 4 & 2
+                \\
+                0 & 1 & -2
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              B^{-1}=\dfrac{1}{det(B)} adj(B)=-\dfrac{1}{5} \begin{pmatrix}
+                -5 & 1 & 3
+                \\
+                -5 & 4 & 2
+                \\
+                0 & 1 & -2
+              \end{pmatrix} 
+              \\
+              \\
+              \\
+              \therefore ~~~~ B^{-1}=\begin{pmatrix}
+                1 & -\dfrac{1}{5} & -\dfrac{3}{5}
+                \\
+                \\
+                1 & -\dfrac{4}{5} & -\dfrac{2}{5}
+                \\
+                \\
+                0 & -\dfrac{1}{5} & \dfrac{2}{5}
+              \end{pmatrix}
+            $
+            \\
+            \textbf{Check:}
+            \\
+            $
+              B^{-1}B=I \Longrightarrow \begin{pmatrix}
+                1 & -\dfrac{1}{5} & -\dfrac{3}{5}
+                \\
+                \\
+                1 & -\dfrac{4}{5} & -\dfrac{2}{5}
+                \\
+                \\
+                0 & -\dfrac{1}{5} & \dfrac{2}{5}
+              \end{pmatrix}\begin{pmatrix}
+                2 & -1 & 2
+                \\
+                2 & -2 & 1
+                \\
+                1 & -1 & 3
+              \end{pmatrix}=\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                0 & 1 & 0
+                \\
+                0 & 0 & 1
+              \end{pmatrix} ~~~~~ \checkmark
+            $
+          }
 
       \end{itemize}
 
