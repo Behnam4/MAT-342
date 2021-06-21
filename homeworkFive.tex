@@ -737,6 +737,166 @@
       \end{pmatrix}
     $$
 
+      \textcolor{hwColor}{
+        $
+          \begin{vmatrix}
+            1 & -3 & 2 & 0
+            \\
+            -1 & 4 & 3 & 1
+            \\
+            1 & 3 & -3 & 1
+            \\
+            0 & 2 & 1 & -1
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =1(-1)^{1+1} \begin{vmatrix}
+            4 & 3 & 1
+            \\
+            3 & -3 & 1
+            \\
+            2 & 1 & -1
+          \end{vmatrix}  
+          +(-3)(-1)^{1+2} \begin{vmatrix}
+            -1 & 3 & 1
+            \\
+            1 & -3 & 1
+            \\
+            0 & 1 & -1
+          \end{vmatrix}  
+          +2(-1)^{1+3} \begin{vmatrix}
+            -1 & 4 & 1
+            \\
+            1 & 3 & 1
+            \\
+            0 & 2 & -1
+          \end{vmatrix}    
+          +0(-1)^{1+4} \begin{vmatrix}
+            -1 & 4 & 3
+            \\
+            1 & 3 & -3
+            \\
+            0 & 2 & 1
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =1(-1)^{1+1} A+(-3)(-1)^{1+2}B+2(-1)^{1+3} C
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          A=\begin{vmatrix}
+            4 & 3 & 1
+            \\
+            3 & -3 & 1
+            \\
+            2 & 1 & -1
+          \end{vmatrix}
+          =4(-1)^{1+1} \begin{vmatrix}
+            -3 & 1
+            \\
+            1 & -1
+          \end{vmatrix}
+          +3(-1)^{1+2} \begin{vmatrix}
+            3 & 1
+            \\
+            2 & -1
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            3 & -3
+            \\
+            2 & 1
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =( 4 \times 2 )+ ( -3 \times -5 )+( 1 \times 9 )=32
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          B=\begin{vmatrix}
+            -1 & 3 & 1
+            \\
+            1 & -3 & 1
+            \\
+            0 & 1 & -1
+          \end{vmatrix}
+          =(-1)(-1)^{1+1} \begin{vmatrix}
+            -3 & 1
+            \\
+            1 & -1
+          \end{vmatrix}
+          +3(-1)^{1+2} \begin{vmatrix}
+            1 & 1
+            \\
+            0 & -1
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            1 & -3
+            \\
+            0 & 1
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =( -1 \times 2 )+( -3 \times -1 )+( 1 \times 1 )=2
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          C=\begin{vmatrix}
+            -1 & 4 & 1
+            \\
+            1 & 3 & 1
+            \\
+            0 & 2 & -1
+          \end{vmatrix}
+          =-1(-1)^{1+1} \begin{vmatrix}
+            3 & 1
+            \\
+            2 & -1
+          \end{vmatrix}
+          +4(-1)^{1+2} \begin{vmatrix}
+            1 & 1
+            \\
+            0 & -1
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            1 & 3
+            \\
+            0 & 2
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =( -1 \times -5 )+( -4 \times -1 )+( 1 \times 2 )=11
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \Longrightarrow 1(-1)^{1+1} A+(-3)(-1)^{1+2}B+2(-1)^{1+3} C=(1 \times 32)+(3 \times 2)+(2 \times 11) 
+          \\
+          \\
+          \\
+          \therefore ~~~~ det \begin{pmatrix}
+            1 & -3 & 2 & 0
+            \\
+            -1 & 4 & 3 & 1
+            \\
+            1 & 3 & -3 & 1
+            \\
+            0 & 2 & 1 & -1
+          \end{pmatrix}=60 ~~~~ \checkmark
+        $
+      }
+
     \item (10 points) Are the vectors $v_1=(2, -1, 2), ~~ v_2=(2, -2, 1),$ and $v_3=(1, -1, 3)$ linearly independent?
 
     \item (10 points) Use Cramer’s rule to determine the solutions, if any exist, to the following system
