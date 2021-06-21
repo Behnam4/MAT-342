@@ -1098,6 +1098,149 @@
         -x+y+z=3
       \end{cases}
     $$
+
+      \textcolor{hwColor}{
+        From the given system of equations we can write the following:
+        \\
+        \\ 
+        $
+          Z=\begin{pmatrix}
+            2 & -1 & 1
+            \\
+            1 & 2 & -1
+            \\
+            -1 & 1 & 1
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          det(Z)=\begin{vmatrix}
+            2 & -1 & 1
+            \\
+            1 & 2 & -1
+            \\
+            -1 & 1 & 1
+          \end{vmatrix}=
+          2(-1)^{1+1} \begin{vmatrix}
+            2 & -1
+            \\
+            1 & 1
+          \end{vmatrix}
+          +(-1)(-1)^{1+2} \begin{vmatrix}
+            1 & -1
+            \\
+            -1 & 1
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            1 & 2
+            \\
+            -1 & 1
+          \end{vmatrix}
+          \\
+          \\
+          \\
+          =(2 \times 3)+(1 \times 0)+(1 \times 3)
+          \\
+          \\
+          \\
+          \therefore ~~~~ det(Z)=9
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_x=\begin{vmatrix}
+            1 & -1 & 1
+            \\
+            2 & 2 & -1
+            \\
+            3 & 1 & 1
+          \end{vmatrix}=
+          1(-1)^{1+1} \begin{vmatrix}
+            2 & -1
+            \\
+            1 & 1
+          \end{vmatrix}
+          +(-1)(-1)^{1+2} \begin{vmatrix}
+            2 & -1
+            \\
+            3 & 1
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            2 & 2
+            \\
+            3 & 1
+          \end{vmatrix}=4
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_y=\begin{vmatrix}
+            2 & 1 & 1
+            \\
+            1 & 2 & -1
+            \\
+            -1 & 3 & 1
+          \end{vmatrix}
+          =2 (-1)^{1+1} \begin{vmatrix}
+            2 & -1
+            \\
+            3 & 1
+          \end{vmatrix}
+          +1 (-1)^{1+2} \begin{vmatrix}
+            1 & -1
+            \\
+            -1 & 1
+          \end{vmatrix}
+          +1 (-1)^{1+3} \begin{vmatrix}
+            1 & 2
+            \\
+            -1 & 3
+          \end{vmatrix}=15
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          D_z=\begin{vmatrix}
+            2 & -1 & 1
+            \\
+            1 & 2 & 2
+            \\
+            -1 & 1 & 3 
+          \end{vmatrix}
+          =2(-1)^{1+1} \begin{vmatrix}
+            2 & 2
+            \\
+            1 & 3 
+          \end{vmatrix}
+          +(-1)(-1)^{1+2} \begin{vmatrix}
+            1 & 2
+            \\
+            -1 & 3 
+          \end{vmatrix}
+          +1(-1)^{1+3} \begin{vmatrix}
+            1 & 2
+            \\
+            -1 & 1
+          \end{vmatrix}=16
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \begin{cases}
+            x=\dfrac{D_x}{det(Z)}=\dfrac{4}{9}
+            \\
+            \\
+            y=\dfrac{D_y}{det(Z)}=\dfrac{15}{9}=\dfrac{5}{3}
+            \\
+            \\
+            z=\dfrac{D_z}{det(Z)}=\dfrac{16}{9}
+          \end{cases}
+        $
+      }
     
 
     \item (10 points) Verify the Cauchy–Schwarz inequality $|u.v| \leq ||u||.||v||$ for the 
