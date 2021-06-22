@@ -1890,9 +1890,98 @@
     \item (5 points each) Let $L: \mathbb{R}^2 \rightarrow \mathbb{R}^3$ be a function given by $L(x,y)=(x-y, x+2y, 3x-2y)$.
       \begin{itemize}
         \item Show that $L$ is a linear transformation.
+
+          \textcolor{hwColor}{
+            Let's define $\alpha=(x_1, y_1)$ and $\beta=(x_2, y_2)$.
+            \\
+            \\
+            $
+              L(\alpha+\beta)=L(x_1+x_2, y_1+y_2)
+              =\left(
+                x_1+x_2-y_1-y_2,
+                x_1+x_2+2y_1+2y_2,
+                3x_1+3x_2-2y_1-2y_2
+              \right)
+              \\
+              \\
+              L(\alpha)+L(\beta)=L(x_1, y_1)+L(x_2, y_2)
+              =\left(
+                x_1+x_2-y_1-y_2,
+                x_1+x_2+2y_1+2y_2,
+                3x_1+3x_2-2y_1-2y_2 
+              \right)
+              \\
+              \\
+              \\
+              \therefore ~~~~~ L(\alpha+\beta)=L(\alpha)+L(\beta)
+              \\
+              \\
+              \\
+              L(a \alpha)=L(a x_1, a y_1)
+              =a\left(x_1-y_1, x_1+2y_1, 3x_1-2y_1\right)
+              \\
+              \\
+              \\
+              \therefore ~~~~~ L(a \alpha)=a L(\alpha) ~~~~ \checkmark
+            $
+            \\
+            \\
+            Hence, $L$ is a linear transformation. $~~~~ \blacksquare$
+          }
+
         \item Find the kernel of $L$.
+
+          \textcolor{hwColor}{
+            \\
+            Kernel of $L=\{ (x,y) \in \mathbb{R}^2: L(x,y)=0,0 \in \mathbb{R}^3 \}$
+            \\
+            $
+              =\{ (x,y) \in \mathbb{R}^2: (x-y, x+2y, 3x-2y)=(0,0,0) \}
+              \\
+              \\
+              =\{ (x,y) \in \mathbb{R}^2: x-y=0, x+2y=0, 3x-2y=0 \}
+              \\
+              \\
+              =\{ (x,y) \in \mathbb{R}^2: x-y=0, x=0, y=0 \}
+              \\
+              \\
+              =\{ (0,0) \} ~~~~ \checkmark
+            $
+          }
+
         \item Find a basis for the range of the transformation $L$.
+
+          \textcolor{hwColor}{
+            \\
+            $
+              L(x,y)=(x-y, x+2y, 3x-2y)=x(1,1,3)+y(-1,2,-2)
+              \\
+              \\
+              \\
+              \therefore ~~~~ \{ (1, 1, 3), (-1, 2, -2) \} ~~~~\checkmark
+            $
+          }
+
         \item Find the standard matrix representation of the transformation $L$. (Use the standard bases for $\mathbb{R}^2 \rightarrow \mathbb{R}^3$.)
+
+          \textcolor{hwColor}{
+            \\
+            The standard bases for $\mathbb{R}^2, \mathbb{R}^3$ are $\{ (1, 0, 0), (0, 1, 0), (0, 0, 1) \}$.
+            Hence, $L(1,0)=(1, 1, 3)$ and $L(0,1)=(-1, 2, -2)$
+            \\
+            \\
+            \\
+            $
+              \therefore ~~~~ \begin{bmatrix}
+                1 & -1
+                \\
+                1 & 2
+                \\
+                3 & -2
+              \end{bmatrix} ~~~~ \checkmark
+            $
+          }
+
       \end{itemize}
 
 
