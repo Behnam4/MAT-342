@@ -1,0 +1,86 @@
+\documentclass[fleqn]{article}
+\oddsidemargin 0.0in
+\textwidth 6.0in
+\thispagestyle{empty}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{flexisym}
+\usepackage{amssymb}
+\usepackage{bigints} 
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\definecolor{hwColor}{HTML}{AD53BA}
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+
+
+    \textsc{\LARGE Arizona State University}\\[1.5cm]
+
+    \textsc{\LARGE Linear Algebra }\\[1.5cm]
+
+
+    \begin{figure}
+      \includegraphics[width=\linewidth]{asu.png}
+    \end{figure}
+
+
+    \HRule \\[0.4cm]
+    { \huge \bfseries Quiz Four}\\[0.4cm] 
+    \HRule \\[1.5cm]
+
+    \textbf{Behnam Amiri}
+
+    \bigbreak
+
+    \textbf{Prof: Sergei Suslov}
+
+    \bigbreak
+
+
+    \textbf{{\large \today}\\[2cm]}
+
+    \vfill
+
+  \end{titlepage}
+
+  \begin{enumerate}
+    \item (10 points) Find the angle between the vectors $u=(-1, 2, -3, 4)$ and $v=(1, -3, 2, -4)$ and 
+    verify the the Cauchy-Schwarz inequality, $|\left\langle u, v\right\rangle| \leq ||u|| ~ ||v||$, for 
+    them using the standard inner product in $\mathbb{R}^4: ~ \left\langle u,v\right\rangle =u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4$.
+
+
+    \item (10 points) Verify that the set of three vectors $v_1=(0, 1, 0), v_2=(-\dfrac{5}{13}, 0, \dfrac{12}{13}),$ and \\
+    $v_3=(\dfrac{12}{13}, 0, \dfrac{5}{13})$ forms an orthonormal basis for $\mathbb{R}^3$ with the standard Euclidean inner
+    product. Express the vector $u=(1, 2, 3)$ ) as a linear combination of the vectors in the given set: 
+    $u=c_1 v_1+c_2 v_2+c_3 v_3$ and find the coordinates $c_1, c_2$ and $c_3$.
+
+    \item (10 points) Prove the Cauchy-Schwarz inequality, $|\left\langle u, v\right\rangle| \leq ||u|| ~ ||v||$,
+    for two arbitrary vectors in an abstract inner product space $V$. Write this inequality explicitly in $\mathbb{R}^4$
+    with the standard inner product: $\left\langle u,v\right\rangle =u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4$.
+
+
+    \item (10 points) Convert the basis $v_1=(1, -1, 0), v_2=(0, 1, -1),$ and $v_3=(-1, 1, -1)$ for $\mathbb{R}^3$ into
+    an orthonormal basis, using the Gram-Schmidt process and the standard inner product in $\mathbb{R}^3$.
+
+
+    \item (Extra credit, 5 points) The linear transformation, $L \left[p(x)\right]=\dfrac{d}{dx}p(x)+p(0)$, maps 
+    a polynomial $p(x)$ of degree $\leq 2$  into a polynomial of degree $\leq 1$, namely, $L: P_2 \rightarrow P_1$.
+    Find the matrix representation of $L$ with respect to the ordered bases $\{ x^2, x, 1\}$ and $\{ x, 1\}$.
+
+    \item (10 points) Show that for any two vectors $u$ and $v$ in an inner product space $V$,
+    $$||u+v||^2+||u-v||=2\left(||u||^2+||v||^2\right)$$
+    Give a geometric interpretation of this result for the vector space $\mathbb{R}^2$.
+
+  \end{enumerate}
+
+\end{document}
