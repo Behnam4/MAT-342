@@ -1285,6 +1285,79 @@
     \item (15 points) Convert the basis $v_1=(1, -1, 0), v_2=(0, 1, -1), v_3=(1, 0, -1)$ for $R^3$ into 
     an orthonormal basis, using the Gram–Schmidt process and the standard inner product in $R^3$.
 
+      \textcolor{hwColor}{
+        \\
+        The Gram-Schmidt process (or procedure) is a sequence of operations that allow to transform a set of linearly 
+        independent vectors into a set of orthonormal vectors that span the same space spanned by the original set.
+        \\
+        \\
+        $
+          \begin{cases}
+            u_1=\dfrac{v_1}{||v_1||}
+            \\
+            \\
+            u_2=\dfrac{v_2-(u_1.u_2)u_1}{||v_2-(u_1.u_2)u_1||}
+            \\
+            \\
+            u_3=\dfrac{v_3-(u_2.v_3)u_2-(u_1.v_3)u_1}{||v_3-(u_2.v_3)u_2-(u_1.v_3)u_1||}
+          \end{cases}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          u_1: 
+          \\
+          \\
+          u_1=\dfrac{(1, -1, 0)}{\sqrt{(1)^2+(-1)^2+(0)^2}}=\dfrac{(1, -1, 0)}{\sqrt{2}}=(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          u_2:
+          \\
+          \\
+          u_2=\dfrac{v_2-(u_1.v_2)u_1}{||v_2-(u_1.v_2)u_1||}=\dfrac{(0, 1, -1)-\left[(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0).(0, 1, -1)\right](\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)}{||(0, 1, -1)-\left[(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0).(0, 1, -1)\right](\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)||}
+          \\
+          \\
+          \\
+          u_2=\dfrac{(0, 1, -1)-(-\dfrac{1}{2}, \dfrac{1}{2}, 0)}{||(0, 1, -1)-(-\dfrac{1}{2}, \dfrac{1}{2}, 0)||}
+          =\dfrac{(\dfrac{1}{2},\dfrac{1}{2},-1)}{||(\dfrac{1}{2},\dfrac{1}{2},-1)||}
+          =\dfrac{(\dfrac{1}{2},\dfrac{1}{2},-1)}{\sqrt{(\dfrac{1}{2})^2+(\dfrac{1}{2})^2+(-1)^2}}
+          \\
+          \\
+          \\
+          u_2=\dfrac{(\dfrac{1}{2},\dfrac{1}{2},-1)}{\sqrt{\dfrac{3}{2}}}=\sqrt{\dfrac{2}{3}}(\dfrac{1}{2},\dfrac{1}{2},-1)=(\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}})
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          u_3:
+          \\
+          \\
+          u_3=\dfrac{v_3-(u_2.v_3)u_2-(u_1.v_3)u_1}{||v_3-(u_2.v_3)u_2-(u_1.v_3)u_1||}
+          \\
+          \\
+          =\dfrac{(1, 0, -1)-((\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}}).(1, 0, -1))(\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}})-((\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0).(1, 0, -1))(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)}{||(1, 0, -1)-((\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}}).(1, 0, -1))(\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}})-((\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0).(1, 0, -1))(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)||}
+          \\
+          \\
+          \\
+        $
+        By doing some algebra we get $u_3=(0, 0, 0)$. Since the result is zero, it is linearly dependent so we can ignore it. Therefore:
+        \\
+        \\
+        $
+          \begin{cases}
+            u_1=\dfrac{(1, -1, 0)}{\sqrt{2}}=(\dfrac{1}{\sqrt{2}}, -\dfrac{1}{\sqrt{2}}, 0)
+            \\
+            \\
+            u_2=(\dfrac{1}{\sqrt{6}}, \dfrac{1}{\sqrt{6}},-\sqrt{\dfrac{2}{3}})
+          \end{cases} ~~~~ \checkmark
+        $
+      }
+
     \item Find the eigenvalues and associated eigenvectors of a given matrix $A$.
       \begin{itemize}
         \item (10 points) $A=\begin{pmatrix}
