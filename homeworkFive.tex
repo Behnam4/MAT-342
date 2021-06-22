@@ -1923,6 +1923,37 @@
     $(f,g)=\bigints\limits_{a}^{b} f(x) g(x) dx$.
 
 
+      \textcolor{hwColor}{
+        The orthogonality condition states that:
+        \\
+        \\
+        $
+          <f, g>=0 \Longrightarrow \bigints\limits_{a}^{b} f(x) g(x) dx=0
+        $
+        \\
+        \\
+        Now if $f$ and $g$ are orthogonal, then:
+        \\
+        \\
+        $
+          ||g||^2+||f||^2=||g+f||^2
+          \\
+          \\
+          ||g||^2=<g, g>=\bigints\limits_{a}^{b} g(x) g(x) dx=\bigints\limits_{a}^{b} g^2(x) dx
+          \\
+          \\
+          ||f||^2=<f, f>=\bigints\limits_{a}^{b} f(x) f(x) dx=\bigints\limits_{a}^{b} f^2(x) dx
+          \\
+          \\
+          ||g+f||^2=<f+g, f+g>=\bigints\limits_{a}^{b} \left[f(x)+g(x)\right] \left[f(x)+g(x)\right] dx
+          =\bigints\limits_{a}^{b} \left[f(x)+g(x)\right]^2 dx
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \bigints\limits_{a}^{b} f^2(x) dx+\bigints\limits_{a}^{b} g^2(x) dx
+          =\bigints\limits_{a}^{b} \left[f(x)+g(x)\right]^2 dx ~~~~ \checkmark
+        $
+      }
 
     \item (15 points) Let $A$ be an $n \times n$ invertible matrix, let $\lambda \neq 0$ be an eigenvalue of $A$,
     and let $x$ be an eigenvector belonging to $\lambda$: $A x=\lambda x$. Use mathematical induction to show that
