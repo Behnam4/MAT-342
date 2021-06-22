@@ -1532,7 +1532,6 @@
           0 & 5 & -1
         \end{pmatrix}$
 
-
           \textcolor{hwColor}{
             $
               \\
@@ -1698,6 +1697,189 @@
       \end{pmatrix}
     $$
     What is the rank of this matrix?
+
+      \textcolor{hwColor}{
+        \\
+        We start by putting the matrix in row echelon form.
+        \\
+        \\
+        $
+          A=\begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            2 & 1 & -2 & 0
+            \\
+            3 & 4 & -3 & 2
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -2R_1+R_2 \rightarrow R_2
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & -5 & 0 & 2
+            \\
+            3 & 4 & -3 & 2
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -3R_1+R_3 \rightarrow R_3
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & -5 & 0 & 2
+            \\
+            0 & -5 & 0 & 5
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -\dfrac{1}{5}R_2 \rightarrow R_2
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & 1 & 0 & -\dfrac{2}{5}
+            \\
+            0 & -5 & 0 & 5
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          5R_2+R_3 \rightarrow R_3
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & 1 & 0 & -\dfrac{2}{5}
+            \\
+            0 & 0 & 0 & 3
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \dfrac{1}{3}R_3 \rightarrow R_3
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & 1 & 0 & -\dfrac{2}{5}
+            \\
+            0 & 0 & 0 & 1
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          \dfrac{2}{5}R_3+R_2 \rightarrow R_2
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & -1
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 0 & 1
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          R_3+R_1 \rightarrow R_1
+          \\
+          \\
+          \begin{pmatrix}
+            1 & 3 & -1 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 0 & 1
+          \end{pmatrix}
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          -3R_2+R_1 \rightarrow R_1
+          \\
+          \\
+          \\
+          \therefore ~~~~~ A=\begin{pmatrix}
+            1 & 0 & -1 & 0
+            \\
+            0 & 1 & 0 & 0
+            \\
+            0 & 0 & 0 & 1
+          \end{pmatrix}
+        $
+        \\
+        \\
+        Row operations do not change the row space, so the rows of the matrix at the end have
+        the same span as our given matrix. Furthermore, the nonzero rows of a matrix in row echelon
+        form are linearly independent. Therefore, the row space has a basis:
+        \\
+        \\
+        $
+          \{ \left[1 , 0 , -1 , 0\right], \left[0 , 1 , 0 , 0\right], \left[0 , 0 , 0 , 1\right] \} 
+        $
+        \\
+        \\
+        Recall that a leading one is the first nonzero entry in a row. The columns containing leading ones 
+        are the pivot columns. To obtain a basis for the column space, we just use the pivot columns from 
+        the original matrix:
+        \\
+        \\
+        $
+          \{ 
+            \begin{bmatrix}
+              1
+              \\
+              2
+              \\
+              3
+            \end{bmatrix},
+            \begin{bmatrix}
+              3
+              \\
+              1
+              \\
+              4
+            \end{bmatrix},
+            \begin{bmatrix}
+              -1
+              \\
+              0
+              \\
+              2
+            \end{bmatrix}
+          \} 
+        $
+        \\
+        \\
+        Finally, the row space and column space each have bases with three vectors, so they have
+        dimension three. Therefore, the rank of A is 3.
+      }
 
 
     \item (5 points each) Let $L: \mathbb{R}^2 \rightarrow \mathbb{R}^3$ be a function given by $L(x,y)=(x-y, x+2y, 3x-2y)$.
