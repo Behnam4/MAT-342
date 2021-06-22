@@ -1522,6 +1522,8 @@
             $
           }
 
+        \pagebreak
+
         \item (15 points) $A=\begin{pmatrix}
           1 & 2 & 1 
           \\
@@ -1529,6 +1531,158 @@
           \\
           0 & 5 & -1
         \end{pmatrix}$
+
+
+          \textcolor{hwColor}{
+            $
+              \\
+              A-\lambda I=\begin{pmatrix}
+                1 & 2 & 1 
+                \\
+                0 & 3 & 1 
+                \\
+                0 & 5 & -1
+              \end{pmatrix}-\begin{pmatrix}
+                \lambda & 0 & 0
+                \\
+                0 & \lambda & 0
+                \\
+                0 & 0 & \lambda
+              \end{pmatrix}=\begin{pmatrix}
+                1-\lambda & 2 & 1 
+                \\
+                0 & 3-\lambda & 1 
+                \\
+                0 & 5 & -1-\lambda
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              det(A-\lambda I)=\begin{vmatrix}
+                1-\lambda & 2 & 1 
+                \\
+                0 & 3-\lambda & 1 
+                \\
+                0 & 5 & -1-\lambda
+              \end{vmatrix}
+              =(1-\lambda)(-1)^{1+1} \begin{vmatrix}
+                3-\lambda & 1 
+                \\
+                5 & -1-\lambda
+              \end{vmatrix}
+              \\
+              \\
+              =(1-\lambda)(3-\lambda)(-1-\lambda)-5
+              \\
+              \\
+              \\
+              det(A-\lambda I)=0 \longleftrightarrow \begin{cases}
+                \lambda=-2
+                \\
+                \lambda=1
+                \\
+                \lambda=4
+              \end{cases}
+            $
+            \\
+            \\
+            Now we need to find the corresponding eigenvectors for each of the above eigenvalues.
+            \\
+            \\
+            \rule{15cm}{3pt}
+            \\
+            \\
+            $
+              \lambda=-2 \longrightarrow A-\lambda I=\begin{pmatrix}
+                3 & 2 & 1 
+                \\
+                0 & 5 & 1 
+                \\
+                0 & 5 & 1
+              \end{pmatrix}
+              \\
+              \\
+              \left(\begin{array}{ccc|c}  
+                3 & 2 & 1 & 0
+                \\
+                0 & 5 & 1 & 0
+                \\ 
+                0 & 5 & 1 & 0
+              \end{array}\right)
+              \\
+              \\
+              \therefore ~~~~ X=\begin{pmatrix}
+                -\dfrac{1}{5}
+                \\
+                \\
+                -\dfrac{1}{5}
+                \\
+                \\
+                1
+              \end{pmatrix}
+              \\
+              \\
+              \rule{15cm}{3pt}
+              \\
+              \\
+              \lambda=1 \longrightarrow A-\lambda I=\begin{pmatrix}
+                0 & 2 & 1 
+                \\
+                0 & 2 & 1 
+                \\
+                0 & 5 & -2
+              \end{pmatrix}
+              \\
+              \\
+              \left(\begin{array}{ccc|c}  
+                0 & 2 & 1 & 0 
+                \\
+                0 & 2 & 1 & 0
+                \\
+                0 & 5 & -2 & 0
+              \end{array}\right)
+              \\
+              \\
+              \therefore ~~~~ X=\begin{pmatrix}
+                1
+                \\
+                0
+                \\
+                0
+              \end{pmatrix}
+              \\
+              \\
+              \rule{15cm}{3pt}
+              \\
+              \\
+              \lambda=4 \longrightarrow A-\lambda I=\begin{pmatrix}
+                -3 & 2 & 1 
+                \\
+                0 & -1 & 1 
+                \\
+                0 & 5 & -5
+              \end{pmatrix}
+              \\
+              \\
+              \left(\begin{array}{ccc|c}  
+                -3 & 2 & 1 & 0
+                \\
+                0 & -1 & 1 & 0
+                \\
+                0 & 5 & -5 & 0
+              \end{array}\right)
+              \\
+              \\
+              \therefore ~~~~ X=\begin{pmatrix}
+                1
+                \\
+                1
+                \\
+                1
+              \end{pmatrix}
+            $
+          }
+
       \end{itemize}
 
 
