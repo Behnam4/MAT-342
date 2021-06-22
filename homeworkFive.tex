@@ -1238,14 +1238,49 @@
             \\
             \\
             z=\dfrac{D_z}{det(Z)}=\dfrac{16}{9}
-          \end{cases}
+          \end{cases} ~~~~ \checkmark
         $
+        \\
+        \\
       }
     
 
     \item (10 points) Verify the Cauchy–Schwarz inequality $|u.v| \leq ||u||.||v||$ for the 
     vectors $u=(1, -2, -3, 4)$ and $v=(-1, -2, 2, 1)$ using the standard inner product in $R^4$.
     Find the angle between these vectors.
+
+      \textcolor{hwColor}{
+        To determine whether the given vectors satisfy the Cauchy–Schwarz inequality we need to 
+        evaluate the required values:
+        \\
+        \\
+        $
+          \left\langle u.v\right\rangle=|(1, -2, -3, 4).(-1, -2, 2, 1)|=|\left[(1)(-1)+(-2)(-2)+(-3)(2)+(4)(1)\right]|=1
+          \\
+          \\
+          \begin{cases}
+            ||u||=\sqrt{(1)^2+(-2)^2+(-3)^2+(4)^2}=\sqrt{30}
+            \\
+            \\
+            ||v||=\sqrt{(-1)^2+(-2)^2+(2)^2+(1)^2}=\sqrt{10}
+          \end{cases} \longrightarrow ||u||.||v||=\sqrt{30} \sqrt{10}=\sqrt{300}
+        $
+        \\
+        \\
+        Clearly, $1 \leq \sqrt{300}$, therefore $|u.v| \leq ||u||.||v||$ holds. $~~~~ \checkmark$
+        \\
+        \\
+        As we know the standard inner product formula is $\left\langle u.v\right\rangle=\left\lVert u\right\rVert \left\lVert v\right\rVert \angle (u, v)$, therefore
+        the angle between the two given vectors is:
+        \\
+        \\
+        $
+          cos\left(\angle (u, v)\right)=\dfrac{\left\langle u.v\right\rangle}{\left\lVert u\right\rVert \left\lVert v\right\rVert}=\dfrac{1}{\sqrt{300}}
+          \Longrightarrow \angle (u, v)=cos^{-1} \left[\dfrac{1}{\sqrt{300}}\right] \approx 86.70^{\circ}
+        $
+      }
+
+    \pagebreak
 
     \item (15 points) Convert the basis $v_1=(1, -1, 0), v_2=(0, 1, -1), v_3=(1, 0, -1)$ for $R^3$ into 
     an orthonormal basis, using the Gram–Schmidt process and the standard inner product in $R^3$.
