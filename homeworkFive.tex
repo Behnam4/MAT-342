@@ -1959,6 +1959,51 @@
     and let $x$ be an eigenvector belonging to $\lambda$: $A x=\lambda x$. Use mathematical induction to show that
     $\lambda^{-m}$ is an eigenvalue of $A^{-m}=(A^{-1})^m$ and $x$ is an eigenvector of $A^{-m}$ belonging to $\lambda^{-m}$.  
 
+      \textcolor{hwColor}{
+        Based on the given we have: (i.e:)
+        \\
+        \\
+        $
+          Ax=\lambda x
+          \\
+          \\
+          A^{-1} Ax=A^{-1} \lambda x
+          \\
+          \\
+          \therefore ~~~~ Ix=A^{-1} \lambda x \Longrightarrow A^{-1} x=\lambda^{-1} x
+        $ 
+        \\
+        \\
+        According to the above result, $\lambda^{-1}$ is an eigen value of $A^{-1}$ with
+        the eigen vector $x$. So now let $m \in \mathcal{Z}$. For $m=1$, $\lambda^{-m}$ is an 
+        eigen value of $A^{-m}=(A^{-1})^m$.
+        \\
+        \\
+        $
+          A^{-(m+1)}x=A^{-m-1} x
+          \\
+          \\
+          =A^{-1} A^{-m}x
+          \\
+          \\
+          =\lambda^{-m} A^{-1} x
+          \\
+          \\
+          =\lambda^{-m} \lambda^{-1} x
+          \\
+          \\
+          =\lambda^{-m-1}x
+          \\
+          \\
+          =\lambda^{-(m+1)} x
+          \\
+          \\
+          \\
+          \therefore ~~~~ A^{-m} x=\lambda^{-m} x
+        $
+        holds for $m \geqslant 0 ~~~~~~ \checkmark$. 
+      }
+
   \end{enumerate}
 
 \end{document}
