@@ -438,12 +438,83 @@
       % }
 
     \item (10 points) Show that for any two vectors $u$ and $v$ in an inner product space $V$,
-    $$||u+v||^2+||u-v||=2\left(||u||^2+||v||^2\right)$$
+    $$||u+v||^2+||u-v||^2=2\left(||u||^2+||v||^2\right)$$
     Give a geometric interpretation of this result for the vector space $\mathbb{R}^2$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        We can start off from the right side of the given statement.
+        \\
+        \\
+        $
+          ||u+v||^2=\left\langle u+v, u+v\right\rangle
+          \\
+          \\
+          =\left\langle u, u+v\right\rangle+\left\langle v, u+v\right\rangle 
+          \\
+          \\
+          =\left[\left\langle u, u\right\rangle+\left\langle u, v\right\rangle\right]+\left[\left\langle v, u\right\rangle+ \left\langle v, v\right\rangle \right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ ||u+v||^2=||u||^2+\left\langle u, v\right\rangle+\left\langle v, u\right\rangle+||v||^2 ~~~~ \checkmark ~~~~ (A)
+          \\
+          \\
+          \rule{15cm}{1pt}
+          \\
+          \\
+          ||u-v||^2=\left\langle u-v, u-v\right\rangle
+          \\
+          \\
+          =\left\langle u, u-v\right\rangle+\left\langle v, u-v\right\rangle 
+          \\
+          \\
+          =\left[\left\langle u, u\right\rangle+\left\langle u, v\right\rangle\right]-\left[\left\langle v, u\right\rangle- \left\langle v, v\right\rangle \right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ ||u-v||^2=||u||^2-\left\langle u, v\right\rangle-\left\langle v, u\right\rangle+||v||^2 ~~~~ \checkmark ~~~~ (B)
+        $
+        \\
+        \\
+        From (A) and (B) we have:
+        \\
+        \\
+        $
+          ||u+v||^2+||u-v||^2=\left[||u||^2+\left\langle u, v\right\rangle+\left\langle v, u\right\rangle+||v||^2\right]+\left[||u||^2-\left\langle u, v\right\rangle-\left\langle v, u\right\rangle+||v||^2\right]
+          \\
+          \\
+          \\
+          \therefore ~~~~ ||u+v||^2+||u-v||^2=2 \left[||u||^2+||v||^2\right] ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        \textbf{Geometric interpretation:}
+        \\
+        \\
+        Parallelogram law states that the sum of the squares of the length of the four sides of a parallelogram is 
+        equal to the sum of the squares of the length of the two diagonals. In Euclidean geometry, it is necessary that 
+        the parallelogram should have equal opposite sides.
+        \\
+        \\
+        \includegraphics[height=6cm, width=10cm]{Yah.JPG}
+        \\
+        \\
+        \\
+        Let $u=\overrightarrow{AB}, v=\overrightarrow{BC}$ therefore $||u||=AB$ and $||v||=BC$.
+        \\
+        \\
+        The vectors $u+v$ and $u-v$ represent the diagonals $\overrightarrow{AC}$ and $\overrightarrow{DB}$ of
+        parallelogram $ABCD$. Note that $||u+v||=AC$ and $||u-v||=DB$.
+        \\
+        \\
+        $
+          ||u+v||^2+||u-v||^2=2\left(||u||^2+||v||^2\right)
+          \\
+          \\
+          \Longrightarrow AC^2+DB^2=2\left(AB^2+BC^2\right)=AB^2+BC^2+CD^2+DA^2 ~~~~~ \checkmark
+        $
+      }
 
   \end{enumerate}
 
