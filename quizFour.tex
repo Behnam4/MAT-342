@@ -433,9 +433,49 @@
     a polynomial $p(x)$ of degree $\leq 2$  into a polynomial of degree $\leq 1$, namely, $L: P_2 \rightarrow P_1$.
     Find the matrix representation of $L$ with respect to the ordered bases $\{ x^2, x, 1\}$ and $\{ x, 1\}$.
 
-      % \textcolor{hwColor}{
-          
-      % }
+      \textcolor{hwColor}{
+        Let $f(x)=ax^2+bx+c$ and $g(x)=px^2+qx+d$ then:
+        \\
+        \\
+        $
+          L\left[f(x)\right]=\dfrac{d}{dx} f(x)+f(0)=2ax+b+c
+          \\
+          \\
+          L\left[g(x)\right]=\dfrac{d}{dx}g(x)+g(0)=2px+q+d
+          \\
+          \\
+          \\
+          L\left[\alpha f(x)+\beta g(x)\right]
+          =L\left[(\alpha a+\beta p)x^2+(\alpha b+\beta q)x+(\alpha c+\alpha d)\right]
+          \\
+          \\
+          =\alpha (2ax+b+c)+\beta (2px+q+d)
+          \\
+          \\
+          =\alpha L(f(x))+\beta L(g(x)) ~~~~ \checkmark
+        $
+        \\
+        \\
+        What we just found is a linear transformation from $P^2 \rightarrow P_1$.
+        \\
+        \\
+        \\
+        $
+          \begin{cases}
+            L(x^2)=\dfrac{d}{dx}x^2+0=2x
+            \\
+            \\
+            L(x)=\dfrac{d}{dx}x+0=1
+            \\
+            \\
+            L(1)=\dfrac{d}{dx}1+1  
+          \end{cases} \Longrightarrow \begin{pmatrix}
+            2 & 0 & 0
+            \\
+            0 & 1 & 1
+          \end{pmatrix} ~~~~ \checkmark
+        $
+      }
 
     \item (10 points) Show that for any two vectors $u$ and $v$ in an inner product space $V$,
     $$||u+v||^2+||u-v||^2=2\left(||u||^2+||v||^2\right)$$
