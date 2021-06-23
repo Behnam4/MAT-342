@@ -247,18 +247,129 @@
     for two arbitrary vectors in an abstract inner product space $V$. Write this inequality explicitly in $\mathbb{R}^4$
     with the standard inner product: $\left\langle u,v\right\rangle =u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4$.
 
+      \textcolor{hwColor}{
+        There are two possibilities $\begin{cases}
+          u=0
+          \\
+          u \neq 0
+        \end{cases}$. Let's consider the two cases.
+        \\
+        \\
+        \\
+        \textbf{Case 1: $u=0$}
+        \\
+        \\
+        $
+          <u, v>=<0, v>=0, ~~~~ ||u||=\sqrt{<u, u>}=\sqrt{<0,0>}=0
+          \\
+          \\
+        $
+        Therefore, both sides of $|\left\langle u, v\right\rangle| \leq ||u|| ~ ||v||$ are equal to zero.
+        which 
+        \\
+        \\
+        \rule{15cm}{3pt}
+        \\
+        \\
+        \textbf{Case 2: $u \neq 0$}
+        \\
+        \\
+        Let's have $u \neq 0$ and $z=v-\dfrac{<v,u>}{||u||^2}u$.
+        \\
+        \\
+        $
+          <z.z>=<v-\dfrac{<v,u>}{||u||^2}u, v-\dfrac{<v,u>}{||u||^2}u>
+          \\
+          \\
+          \\
+          =<v,v>-\dfrac{<v, u><v,u>}{||u||^2}-\dfrac{<v,u><u,v>}{||u||^2}+<u,u>\dfrac{<v,u><v,u>}{||u||^4}
+          \\
+          \\
+          \\
+          =<v,v>-\dfrac{<v,u><v,u>}{||u||^2}-\dfrac{<u,v><u,v>}{||u||^2}+\dfrac{<v,u><v,u>}{||u||^2}
+          \\
+          \\
+          \\
+          =||v||^2-\dfrac{|<u,v>|^2}{||u||^2}
+          \\
+          \\
+          \\
+          =\dfrac{||u||^2 ~ ||v||^2-|<u,v>|^2}{||u||^2}
+        $
+        \\
+        \\
+        Based on the above result:
+        \\
+        \\
+        $
+          \therefore ~~~~~ \left\langle z,z\right\rangle  \geq 0
+          \\
+          \\
+          \Longrightarrow \dfrac{||u||^2 ~ ||v||^2-|<u,v>|^2}{||u||^2} \geq 0
+          \\
+          \\
+          \Longrightarrow ||u||^2 ~ ||v||^2-|<u,v>|^2 \geq 0
+          \\
+          \\
+          \Longrightarrow |\left\langle u,v\right\rangle| \leq ||u|| ~ ||v|| ~~~~ \checkmark
+        $
+        \\
+        \\
+        In $\mathbb{R}^4$ with standard inner product we have:
+        \\
+        \\
+        $
+          \left\langle u,v\right\rangle=u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4
+          \\
+          \\
+          |\left\langle u,v\right\rangle|=|u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4|
+          \\
+          \\
+          \begin{cases}
+            ||u||=\sqrt{\left\langle u,u\right\rangle}=\sqrt{u_1^2+u_2^2+u_3^2+u_4^2}
+            \\
+            \\
+            ||v||=\sqrt{\left\langle u,u\right\rangle}=\sqrt{v_1^2+v_2^2+v_3^2+v_4^2}
+          \end{cases}
+        $
+        \\
+        \\
+        \\
+        Almost there. We need to rewrite the above inequality so we get:
+        \\
+        \\
+        $
+          |u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4| \leq \sqrt{u_1^2+u_2^2+u_3^2+u_4^2} \sqrt{v_1^2+v_2^2+v_3^2+v_4^2}
+          \\
+          \\
+          \\
+          \therefore ~~~~ |u_1 v_1+u_2 v_2+u_3 v_3+u_4 v_4| \leq \sqrt{\left(u_1^2+u_2^2+u_3^2+u_4^2\right) \left(v_1^2+v_2^2+v_3^2+v_4^2\right)} ~~~ \blacksquare 
+        $
+      }
+
 
     \item (10 points) Convert the basis $v_1=(1, -1, 0), v_2=(0, 1, -1),$ and $v_3=(-1, 1, -1)$ for $\mathbb{R}^3$ into
     an orthonormal basis, using the Gram-Schmidt process and the standard inner product in $\mathbb{R}^3$.
 
+      % \textcolor{hwColor}{
+          
+      % }
 
     \item (Extra credit, 5 points) The linear transformation, $L \left[p(x)\right]=\dfrac{d}{dx}p(x)+p(0)$, maps 
     a polynomial $p(x)$ of degree $\leq 2$  into a polynomial of degree $\leq 1$, namely, $L: P_2 \rightarrow P_1$.
     Find the matrix representation of $L$ with respect to the ordered bases $\{ x^2, x, 1\}$ and $\{ x, 1\}$.
 
+      % \textcolor{hwColor}{
+          
+      % }
+
     \item (10 points) Show that for any two vectors $u$ and $v$ in an inner product space $V$,
     $$||u+v||^2+||u-v||=2\left(||u||^2+||v||^2\right)$$
     Give a geometric interpretation of this result for the vector space $\mathbb{R}^2$.
+
+      % \textcolor{hwColor}{
+          
+      % }
 
   \end{enumerate}
 
