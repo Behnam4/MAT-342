@@ -92,8 +92,156 @@
 
     \item (10 points) Verify that the set of three vectors $v_1=(0, 1, 0), v_2=(-\dfrac{5}{13}, 0, \dfrac{12}{13}),$ and \\
     $v_3=(\dfrac{12}{13}, 0, \dfrac{5}{13})$ forms an orthonormal basis for $\mathbb{R}^3$ with the standard Euclidean inner
-    product. Express the vector $u=(1, 2, 3)$ ) as a linear combination of the vectors in the given set: 
+    product. Express the vector $u=(1, 2, 3)$ as a linear combination of the vectors in the given set: 
     $u=c_1 v_1+c_2 v_2+c_3 v_3$ and find the coordinates $c_1, c_2$ and $c_3$.
+
+    \textcolor{hwColor}{
+      \\
+      Based on the given vectors, let's create a set of column space: 
+      $$
+        S=\{ \left(0, 1, 0\right), \left(-\dfrac{5}{13}, 0, \dfrac{12}{13}\right), \left(\dfrac{12}{13}, 0, \dfrac{5}{13}\right) \} 
+      $$
+      Now let's find the inner product of these vectors: 
+      \\
+      \\
+      $
+        \begin{cases}
+          \left\langle v_1, v_2\right\rangle=(0)(-\dfrac{5}{13})+(1)(0)+(0)(\dfrac{12}{13})=0
+          \\
+          \\
+          \left\langle v_1, v_3\right\rangle=(0)(\dfrac{12}{13})+(1)(0)+(0)(\dfrac{5}{13})=0
+          \\
+          \\
+          \left\langle v_2, v_3\right\rangle=(-\dfrac{5}{13})(\dfrac{12}{13})+(0)(0)+(\dfrac{12}{13})(\dfrac{5}{13})=0
+        \end{cases}
+      $
+      \\
+      \\
+      These results show that the given vectors are linearly independent, therefore they form a basis for $\mathbb{R}^3$.
+      Also, it is obvious that the given vectors are orthogonal to each other, therefore the set $S$ is an orthogonal
+      set in $\mathbb{R}^3$. 
+      \\
+      \\
+      \\
+      $
+        \begin{cases}
+          ||v_1||=\sqrt{(0)^2+(1)^2+(0)^2}=1
+          \\
+          \\
+          ||v_2||=\sqrt{(-\dfrac{5}{13})^2+(0)^2+(\dfrac{12}{13})^2}=1
+          \\
+          \\
+          ||v_3||=\sqrt{(\dfrac{12}{13})^2+(0)^2+(\dfrac{5}{13})^2}=1
+        \end{cases}
+      $
+      \\
+      \\
+      Therefore, the set $S$ is orthonormal.
+      \\
+      \\
+      Time to find the coordinates $c_1, c_2,$ and $c_3$.
+      \\
+      \\
+      $
+        u=c_1 v_1+c_2 v_2+c_3 v_3 \Longrightarrow (1, 2, 3)=c_1 (0, 1, 0)+c_2 (-\dfrac{5}{13}, 0, \dfrac{12}{13})+c_3 (\dfrac{12}{13}, 0, \dfrac{5}{13})
+        \\
+        \\
+        \\
+        \Longrightarrow (1, 2, 3)=(0, c_1, 0)+(-\dfrac{5}{13}c_2, 0, \dfrac{12}{13}c_2)+(\dfrac{12}{13}c_3, 0, \dfrac{5}{13}c_3)
+        \\
+        \\
+        \\
+        \begin{cases}
+          -\dfrac{5}{13}c_2+\dfrac{12}{13}c_3=1
+          \\
+          \\
+          c_1=2
+          \\
+          \\
+          \dfrac{12}{13}c_2+\dfrac{5}{13}c_3=3 
+        \end{cases} \Longrightarrow
+        \begin{cases}
+          -\dfrac{5}{13}c_2+\dfrac{12}{13}c_3=1
+          \\
+          \\
+          \dfrac{12}{13}c_2+\dfrac{5}{13}c_3=3 
+        \end{cases} \Longrightarrow 
+        \left(\begin{array}{cc|c}  
+          -\dfrac{5}{13} & \dfrac{12}{13} & 1
+          \\
+          \\
+          \dfrac{12}{13} & \dfrac{5}{13} & 3
+        \end{array}\right)
+        \\
+        \\
+        \rule{15cm}{3pt}
+        \\
+        \\
+        -\dfrac{13}{5}R_1 \rightarrow R_1
+        \\
+        \\
+        \left(\begin{array}{cc|c}  
+          1 & -\dfrac{12}{5} & -\dfrac{13}{5}
+          \\
+          \\
+          \dfrac{12}{13} & \dfrac{5}{13} & 3
+        \end{array}\right)
+        \\
+        \\
+        \rule{15cm}{3pt}
+        \\
+        \\
+        -\dfrac{12}{13}R_1+R_2 \rightarrow R_2
+        \\
+        \\
+        \left(\begin{array}{cc|c}  
+          1 & -\dfrac{12}{5} & -\dfrac{13}{5}
+          \\
+          \\
+          0 & \dfrac{13}{5} & \dfrac{27}{5}
+        \end{array}\right)
+        \\
+        \\
+        \rule{15cm}{3pt}
+        \\
+        \\
+        \dfrac{5}{13}R_2 \rightarrow R_2
+        \\
+        \\
+        \left(\begin{array}{cc|c}  
+          1 & -\dfrac{12}{5} & -\dfrac{13}{5}
+          \\
+          \\
+          0 & 1 & \dfrac{27}{13}
+        \end{array}\right)
+        \\
+        \\
+        \rule{15cm}{3pt}
+        \\
+        \\
+        \dfrac{12}{5}R_2+R_1 \rightarrow R_1
+        \\
+        \\
+        \left(\begin{array}{cc|c}  
+          1 & 0 & \dfrac{31}{13}
+          \\
+          \\
+          0 & 1 & \dfrac{27}{13}
+        \end{array}\right)
+        \\
+        \\
+        \\
+        \therefore ~~~~~ \begin{cases}
+          c_1=2
+          \\
+          \\
+          c_2=\dfrac{31}{13}
+          \\
+          \\
+          c_3=\dfrac{27}{13}
+        \end{cases} ~~~~~ \checkmark
+      $
+    }
 
     \item (10 points) Prove the Cauchy-Schwarz inequality, $|\left\langle u, v\right\rangle| \leq ||u|| ~ ||v||$,
     for two arbitrary vectors in an abstract inner product space $V$. Write this inequality explicitly in $\mathbb{R}^4$
