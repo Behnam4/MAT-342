@@ -2201,9 +2201,61 @@
     $$
     for all $u,v \in V$.  [Hint: You may use the Cauchy-Schwarz inequality: $|\left\langle u, v\right\rangle | \leq ||u||.||v||$]
 
-    % \textcolor{hwColor}{
-          
-    % }
+      \textcolor{hwColor}{
+        \\
+        By the defintion of vector addition, $||\overrightarrow{u}||$ and $||\overrightarrow{v}||$ are two sides of a triangle, 
+        where the tip of $||\overrightarrow{u}||$ is at the tail of $||\overrightarrow{v}||$, then 
+        $||\overrightarrow{u}+\overrightarrow{v}||$  is the length of the third side of this triangle.
+        So the triangle inequality states that the length of the third side is less than the sum of 
+        the lengths of the other two sides. This is a classical theorem of Euclidean Geometry, written in terms of vectors.
+        \\
+        \\
+        By using the \textbf{Cauchy–Schwarz} inequality, $||\overrightarrow{u}.\overrightarrow{v}|| \leq ||\overrightarrow{u}|| . ||\overrightarrow{v}||$
+        to prove the Triangle inequality, we have:
+        \\
+        \\
+        $
+            ||\overrightarrow{u}+\overrightarrow{v}||^2
+            =\left(\overrightarrow{u}+\overrightarrow{v}\right).\left(\overrightarrow{u}+\overrightarrow{v}\right)
+            =\overrightarrow{u}.\overrightarrow{u}+\overrightarrow{u}.\overrightarrow{v}+\overrightarrow{v}.\overrightarrow{u}+\overrightarrow{v}.\overrightarrow{v}
+            \\
+            \\
+            \\
+            =||\overrightarrow{u}||^2+2 \overrightarrow{u}.\overrightarrow{v}+||\overrightarrow{v}||^2
+        $
+        \\
+        \\
+        Since $\overrightarrow{u}.\overrightarrow{v} \leq ||\overrightarrow{u}.\overrightarrow{v}||$ (any number is less than or equal to its absolute value)
+        \\
+        \\
+        $
+          ||\overrightarrow{u}+\overrightarrow{v}||^2 \leq ||\overrightarrow{u}||^2+2 ||\overrightarrow{u}.\overrightarrow{v}||+||\overrightarrow{v}||^2
+        $
+        \\
+        \\
+        Using \textbf{Cauchy–Schwarz}
+        \\
+        \\
+        $
+          ||\overrightarrow{u}+\overrightarrow{v}||^2 \leq ||\overrightarrow{u}||^2+2 ||\overrightarrow{u}||.||\overrightarrow{v}||+||\overrightarrow{v}||^2
+          \\
+          \\
+          \\
+          \Longrightarrow ||\overrightarrow{u}||^2+||\overrightarrow{v}||^2+2 ||\overrightarrow{u}|| ||\overrightarrow{v}||=\left(||\overrightarrow{u}||+||\overrightarrow{v}||\right)^2
+          \\
+          \\
+          \\
+          \Longrightarrow ||\overrightarrow{u}+\overrightarrow{v}||^2 \leq \left(||\overrightarrow{u}||+||\overrightarrow{v}||\right)^2
+        $
+        \\
+        \\
+        On both sides of this inequality, the quantity under the square is known to be positive, so we can remove the squares.
+        \\
+        \\
+        $
+          \therefore ~~~~~ ||\overrightarrow{u}+\overrightarrow{v}|| \leq ||\overrightarrow{u}||+||\overrightarrow{v}|| ~~~~ \checkmark
+        $
+      }
 
 
   \end{enumerate}
