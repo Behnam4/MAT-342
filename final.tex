@@ -1608,12 +1608,161 @@
     $$
       L(x_1, x_2, x_3)=\left(x_1+x_2-x_3, ~ x_1-x_2+x_3\right)
     $$ 
-    Find the matrix representation of $L$ with respect to the canonical bases. What is the kurnel
+    Find the matrix representation of $L$ with respect to the canonical bases. What is the kernel
     of this transformation?
 
-      % \textcolor{hwColor}{
-            
-      % }
+      \textcolor{hwColor}{
+        \\
+        \\
+        $L:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ is a linear transformation defined by 
+        $L(x_1, x_2, x_3)=\left(x_1+x_2-x_3, ~ x_1-x_2+x_3\right)$. We know the basis vectors 
+        for $\mathbb{R}^3$ are $e_1=(1, 0, 0), e_2=(0, 1, 0)$ and $e_3=(0, 0, 1)$.
+        Based on the given transformation we have:
+        \\
+        \\
+        $
+          L\left(\begin{bmatrix}
+            x_1 
+            \\
+            x_2
+            \\
+            x_3
+          \end{bmatrix}\right)
+          =L\left(
+            \begin{bmatrix}
+              x_1+x_2-x_3 
+              \\
+              x_1-x_2+x_3
+            \end{bmatrix}
+          \right)
+          \\
+          \\
+          \\
+          \Longrightarrow \begin{cases}
+            L\left(\begin{bmatrix}
+              1 
+              \\
+              0
+              \\
+              0
+            \end{bmatrix}\right)=\begin{bmatrix}
+              1+0-0 
+              \\
+              1-0+0
+            \end{bmatrix}=\begin{bmatrix}
+              1 
+              \\
+              1
+            \end{bmatrix}=1\begin{bmatrix}
+              1 
+              \\
+              0
+            \end{bmatrix}+1\begin{bmatrix}
+              0 
+              \\
+              1
+            \end{bmatrix}
+            \\
+            \\
+            L\left(\begin{bmatrix}
+              0 
+              \\
+              1
+              \\
+              0
+            \end{bmatrix}\right)=\begin{bmatrix}
+              0+1-0 
+              \\
+              0-1+0
+            \end{bmatrix}=\begin{bmatrix}
+              1 
+              \\
+              -1
+            \end{bmatrix}=1\begin{bmatrix}
+              1 
+              \\
+              0
+            \end{bmatrix}+(-1)\begin{bmatrix}
+              0 
+              \\
+              1
+            \end{bmatrix}
+            \\
+            \\
+            L\left(\begin{bmatrix}
+              0 
+              \\
+              0
+              \\
+              1
+            \end{bmatrix}\right)=\begin{bmatrix}
+              0+0-1 
+              \\
+              0-0+1
+            \end{bmatrix}=\begin{bmatrix}
+              -1 
+              \\
+              1
+            \end{bmatrix}=(-1)\begin{bmatrix}
+              1 
+              \\
+              0
+            \end{bmatrix}+1\begin{bmatrix}
+              0 
+              \\
+              1
+            \end{bmatrix}
+          \end{cases} ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        Therefore, the matrix for $L$ relative to the standard bases is $\begin{pmatrix}
+          1 & 1 & -1
+          \\
+          1 & -1 & 1
+        \end{pmatrix}$.
+        \\
+        \\
+        \\
+        Recall that the kernel of a transformation is the subset of the domain which maps into the
+        zero vector. Depending on what we pick for x3 we have the following:
+        \\
+        \\
+        $
+          L\left(
+            \begin{bmatrix}
+              x_1+x_2-x_3 
+              \\
+              x_1-x_2+x_3
+            \end{bmatrix}
+          \right)=\begin{bmatrix}
+            0 
+            \\
+            0
+          \end{bmatrix}
+        $
+        \\
+        \\
+        If we set $x_3=1$ then we have:
+        \\
+        \\
+        $
+          \begin{pmatrix}
+            x_1+x_2=1
+            \\
+            x_1-x_2=-1
+          \end{pmatrix} \Longrightarrow \begin{cases}
+            x_1=0
+            \\
+            x_2=1
+          \end{cases}
+          \\
+          \\
+          \\
+          \therefore ~~~~~ ker(L)=\left(0, 1, 1\right) ~~~~ \checkmark
+        $
+      }
 
     \item (20 points) Solve the following initial value problem:
     $$
