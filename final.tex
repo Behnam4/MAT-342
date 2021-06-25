@@ -67,8 +67,239 @@
       \begin{itemize}
         \item (20 points) Find $A^{-1}$.
 
+          \textcolor{hwColor}{
+            $
+              A^{-1}=\dfrac{1}{det(A)} adj(A) 
+              \\
+              \\
+              \\
+              adj(A)=\left(A_{ij}\right)^T=\begin{pmatrix}
+                +\begin{vmatrix}
+                  3 & -1 
+                  \\
+                  4 & -2
+                \end{vmatrix} 
+                & -\begin{vmatrix}
+                  0 & -1 
+                  \\
+                  -3 & -2
+                \end{vmatrix} 
+                & +\begin{vmatrix}
+                  0 & 3 
+                  \\
+                  -3 & 4
+                \end{vmatrix}
+                \\
+                \\
+                -\begin{vmatrix}
+                  -3 & 1 
+                  \\
+                  4 & -2
+                \end{vmatrix} 
+                & +\begin{vmatrix}
+                  -7 & 1 
+                  \\
+                  -3 & -2
+                \end{vmatrix} 
+                & -\begin{vmatrix}
+                  -7 & -3
+                  \\
+                  -3 & 4
+                \end{vmatrix}
+                \\
+                \\
+                +\begin{vmatrix}
+                  -3 & 1
+                  \\
+                  3 & -1
+                \end{vmatrix} 
+                & -\begin{vmatrix}
+                  -7 & 1
+                  \\
+                  0 & -1
+                \end{vmatrix} 
+                & +\begin{vmatrix}
+                  -7 & -3
+                  \\
+                  0 & 3
+                \end{vmatrix}
+              \end{pmatrix}^T=\begin{pmatrix}
+                -2 & 3 & 9
+                \\
+                -2 & 17 & 37 
+                \\
+                0 & -7 & -21
+              \end{pmatrix}^T
+              \\
+              \\
+              \\
+              \\
+              \therefore ~~~~ adj(A)=\begin{pmatrix}
+                -2 & -2 & 0
+                \\
+                3 & 17 & -7 
+                \\
+                9 & 37 & -21
+              \end{pmatrix} ~~~~ \checkmark
+              \\
+              \\
+              \rule{15cm}{2pt}
+              \\
+              \\
+              det(A)=\begin{vmatrix}
+                -7 & -3 & 1
+                \\
+                0 & 3 & -1 
+                \\
+                -3 & 4 & -2
+              \end{vmatrix}
+              =(-7)(-1)^{1+1} \begin{vmatrix}
+                3 & -1 
+                \\
+                4 & -2
+              \end{vmatrix}+0+(-3)(-1)^{3+1} \begin{vmatrix}
+                -3 & 1
+                \\
+                3 & -1 
+              \end{vmatrix}
+              \\
+              \\
+              =(-7)(-2)+(-3)(0)
+              \\
+              \\
+              \\
+              \therefore ~~~~ det(A)=14 ~~~~ \checkmark
+            $
+            \\
+            \\
+            \\
+            Now we can find the inverse matrix:
+            \\
+            \\
+            $
+              A^{-1}=\dfrac{1}{det(A)} adj(A)=\dfrac{1}{14} \begin{pmatrix}
+                -2 & -2 & 0
+                \\
+                3 & 17 & -7 
+                \\
+                9 & 37 & -21
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              A^{-1}=\begin{pmatrix}
+                -\dfrac{1}{7} & -\dfrac{1}{7} & 0
+                \\
+                \\
+                \dfrac{3}{14} & \dfrac{17}{14} & -\dfrac{1}{2}
+                \\
+                \\
+                \dfrac{9}{14} & \dfrac{37}{14} & -\dfrac{3}{2}
+              \end{pmatrix} ~~~~ \checkmark
+            $
+            \\
+            \\
+            \\
+            \\
+            \textbf{Testing the solution:}
+            \\
+            \\
+            $
+              A.A^{-1}=\begin{pmatrix}
+                -7 & -3 & 1
+                \\
+                0 & 3 & -1 
+                \\
+                -3 & 4 & -2
+              \end{pmatrix}.\begin{pmatrix}
+                -\dfrac{1}{7} & -\dfrac{1}{7} & 0
+                \\
+                \\
+                \dfrac{3}{14} & \dfrac{17}{14} & -\dfrac{1}{2}
+                \\
+                \\
+                \dfrac{9}{14} & \dfrac{37}{14} & -\dfrac{3}{2}
+              \end{pmatrix}=\begin{pmatrix}
+                1 & 0 & 0
+                \\
+                0 & 1 & 0
+                \\
+                0 & 0 & 1
+              \end{pmatrix}=I_{2 \times 2} ~~~~ \checkmark
+            $ 
+            \\
+            \\
+            \\
+            The above justifies the truthy of our result.
+            \\
+            \\
+          }
+
 
         \item (10 points) Solve the system $Ax=(1, -1, 1)^T$.
+
+          \textcolor{hwColor}{
+            $
+              \\
+              Ax=(1, -1, 1)^T
+              \Longrightarrow
+              A^{-1}.Ax=A^{-1}\begin{pmatrix}
+                1
+                \\
+                -1
+                \\
+                1
+              \end{pmatrix}
+              \Longrightarrow
+              Ix=A^{-1}\begin{pmatrix}
+                1
+                \\
+                -1
+                \\
+                1
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              x=\begin{pmatrix}
+                -\dfrac{1}{7} & -\dfrac{1}{7} & 0
+                \\
+                \\
+                \dfrac{3}{14} & \dfrac{17}{14} & -\dfrac{1}{2}
+                \\
+                \\
+                \dfrac{9}{14} & \dfrac{37}{14} & -\dfrac{3}{2}
+              \end{pmatrix}.\begin{pmatrix}
+                1
+                \\
+                -1
+                \\
+                1
+              \end{pmatrix}
+              =\begin{pmatrix}
+                (-\dfrac{1}{7})(1)+(-\dfrac{1}{7})(-1)+(0)(1)
+                \\
+                \\
+                (\dfrac{3}{14})(1)+(\dfrac{17}{14})(-1)+(-\dfrac{1}{2})(1)
+                \\
+                \\
+                (\dfrac{9}{14})(1)+(\dfrac{37}{14})(-1)+(-\dfrac{3}{2})(1)
+              \end{pmatrix}
+              \\
+              \\
+              \\
+              \\
+              \therefore ~~~~ x=\begin{pmatrix}
+                0
+                \\
+                \\
+                -\dfrac{3}{2}
+                \\
+                \\
+                -\dfrac{7}{2}
+              \end{pmatrix} ~~~~ \checkmark
+            $
+          }
       \end{itemize}
 
     \item (10 points) Evaluate the following determinant:
@@ -82,8 +313,17 @@
       \end{pmatrix}
     $$
 
+      % \textcolor{hwColor}{
+          
+      % }
+
     \item (25 points) Convert the basis $v_1=(1,-1, 0), ~ v_2=(0, 1, -1),$ and $v_3=(1, 1, 1)$ for
     $\mathbb{R}^3$ into an orthonormal basis, using the Gram-Schmidt process and the standard inner product in $\mathbb{R}^3$. 
+
+
+      % \textcolor{hwColor}{
+            
+      % }
 
     \item Find the eigenvalues and associated eigenvectors of a given matrix $A$.
       \begin{itemize}
@@ -94,6 +334,10 @@
           6 & -3
         \end{pmatrix}$
 
+          % \textcolor{hwColor}{
+            
+          % }
+
 
         \item (25 points) $A=\begin{pmatrix}
           -2 & 0 & 0
@@ -102,7 +346,11 @@
           \\
           1 & -2 & 2
         \end{pmatrix}$
-      \end{itemize} 
+      \end{itemize}
+
+        % \textcolor{hwColor}{
+            
+        % }
 
 
     \item (25 points) Solve the following system of linear equations:
@@ -118,6 +366,10 @@
       \end{cases}
     $$
 
+      % \textcolor{hwColor}{
+            
+      % }
+
 
     \item (20 points) Find both a basis for the row space and a basis for the column space of the matrix
     $$
@@ -131,6 +383,10 @@
     $$
     What is the rank of this matrix? Find the nullspace basis of this matrix.
 
+      % \textcolor{hwColor}{
+            
+      % }
+
 
     \item (20 points) The linear transformation, $L:\mathbb{R}^3 \rightarrow \mathbb{R}^2$ is given by 
     $$
@@ -139,7 +395,9 @@
     Find the matrix representation of $L$ with respect to the canonical bases. What is the kurnel
     of this transformation?
 
-
+      % \textcolor{hwColor}{
+            
+      % }
 
     \item (20 points) Solve the following initial value problem:
     $$
@@ -158,6 +416,10 @@
       \end{pmatrix}
     $$
 
+      % \textcolor{hwColor}{
+            
+      % }
+
 
     \item (10 points) (The Triangle Inequality.) Let $V$ be an inner product space with an inner product
     $\left\langle u, v\right\rangle$. Prove that 
@@ -165,6 +427,12 @@
       ||u+v|| \leq ||u||+||v||, ~~~~~ ||w||^2=\left\langle w, w\right\rangle
     $$
     for all $u,v \in V$.  [Hint: You may use the Cauchy-Schwarz inequality: $|\left\langle u, v\right\rangle | \leq ||u||.||v||$]
+
+    % \textcolor{hwColor}{
+          
+    % }
+
+
   \end{enumerate}
 
 \end{document}
