@@ -1781,9 +1781,414 @@
       \end{pmatrix}
     $$
 
-      % \textcolor{hwColor}{
-            
-      % }
+      \textcolor{hwColor}{
+        $
+          \begin{pmatrix}
+            -2 & 0 & 0
+            \\
+            3 & 7 & 2
+            \\
+            1 & -2 & 2
+          \end{pmatrix} 
+        $ matrix is the exact same matrix given in the previous question 4. The way we
+        are going to solve this problem is to calculate the eigenvalues of the matrix 
+        and the corresonding eigenvectors. We already did that in question 4. so we have:
+        \\
+        \\
+        $
+          \begin{cases}
+            \lambda=-2 \Longrightarrow X=\begin{pmatrix}
+              -\dfrac{8}{3}
+              \\
+              \\
+              \dfrac{3}{2}
+              \\
+              \\
+              1
+            \end{pmatrix}
+            \\
+            \\
+            \lambda=3 \Longrightarrow X=\begin{pmatrix}
+              0
+              \\
+              \\
+              -\dfrac{1}{2}
+              \\
+              \\
+              1
+            \end{pmatrix}
+            \\
+            \\
+            \lambda=6 \Longrightarrow X=\begin{pmatrix}
+              0
+              \\
+              \\
+              -2
+              \\
+              \\
+              1
+            \end{pmatrix}
+          \end{cases}
+          \\
+          \\
+          \\
+          \overrightarrow{X}=e^{\lambda t} \overrightarrow{v}, ~~~ \overrightarrow{v} ~~ constant \neq 0
+          \\
+          \\
+          \\
+        $
+        \textbf{General solution:}
+        \\
+        \\
+        $
+          \overrightarrow{X}=C_1 e^{\lambda t} \begin{pmatrix}
+            -\dfrac{8}{3}
+            \\
+            \\
+            \dfrac{3}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_2 e^{\lambda t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_3 e^{\lambda t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -2
+            \\
+            \\
+            1
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          =C_1 e^{-2 t} \begin{pmatrix}
+            -\dfrac{8}{3}
+            \\
+            \\
+            \dfrac{3}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_2 e^{3 t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_3 e^{6 t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -2
+            \\
+            \\
+            1
+          \end{pmatrix}
+        $
+        \\
+        \\
+        \\
+        \\
+        \\
+        \textbf{Initial-value problem:}
+        \\
+        \\
+        $
+          x(0)=\begin{pmatrix}
+            0
+            \\
+            1
+            \\
+            -2
+          \end{pmatrix}=C_1 \begin{pmatrix}
+            -\dfrac{8}{3}
+            \\
+            \\
+            \dfrac{3}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_2 \begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+C_3 \begin{pmatrix}
+            0
+            \\
+            \\
+            -2
+            \\
+            \\
+            1
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          \Longrightarrow \begin{pmatrix}
+            -\dfrac{8}{3} C_1
+            \\
+            \\
+            \dfrac{3}{2}C_1
+            \\
+            \\
+            C_1
+          \end{pmatrix}+\begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}C_2
+            \\
+            \\
+            C_2
+          \end{pmatrix}+\begin{pmatrix}
+            0
+            \\
+            \\
+            -2C_3
+            \\
+            \\
+            C_3
+          \end{pmatrix}=\begin{pmatrix}
+            0
+            \\
+            \\
+            1
+            \\
+            \\
+            -2
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          \Longrightarrow \begin{cases}
+            -\dfrac{8}{3} C_1=0
+            \\
+            \\
+            \dfrac{3}{2} C_1-\dfrac{1}{2} C_2-2C_3=1
+            \\
+            \\
+            C_1+C_2+C_3=-2
+          \end{cases}
+          \\
+          \\
+          \\
+          \Longrightarrow \begin{pmatrix}
+            -\dfrac{8}{3} & 0 & 0
+            \\
+            \\
+            \dfrac{3}{2} & -\dfrac{1}{2} & -2
+            \\
+            \\
+            1 & 1 & 1
+          \end{pmatrix} \begin{pmatrix}
+            C_1
+            \\
+            \\
+            C_2
+            \\
+            \\
+            C_3
+          \end{pmatrix}=\begin{pmatrix}
+            0
+            \\
+            \\
+            1
+            \\
+            \\
+            -2
+          \end{pmatrix}
+        $
+        \\
+        \\
+        \\
+        Now can rewrite this in the reduced Row-echelon form:
+        \\
+        \\
+        $
+          \left(\begin{array}{ccc|c}
+            -\dfrac{8}{3} & 0 & 0 & 0
+            \\
+            \dfrac{3}{2} & -\dfrac{1}{2} & -2 & 1
+            \\
+            1 & 1 & 1 & -2
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -\dfrac{3}{8}R_1 \rightarrow R_1
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            \dfrac{3}{2} & -\dfrac{1}{2} & -2 & 1
+            \\
+            1 & 1 & 1 & -2
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -\dfrac{3}{2}R_1+R_2 \rightarrow R_2
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & -\dfrac{1}{2} & -2 & 1
+            \\
+            1 & 1 & 1 & -2
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -R_1+R_3 \rightarrow R_3
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & -\dfrac{1}{2} & -2 & 1
+            \\
+            0 & 1 & 1 & -2
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -2R_2 \rightarrow R_2
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 4 & -2
+            \\
+            0 & 1 & 1 & -2
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -R_2+R_3 \rightarrow R_3
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 4 & -2
+            \\
+            0 & 0 & -3 & 0
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -\dfrac{1}{3}R_3 \rightarrow R_3
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 4 & -2
+            \\
+            0 & 0 & 1 & 0
+          \end{array}\right)
+          \\
+          \\
+          \rule{15cm}{2pt}
+          \\
+          \\
+          -4R_3+R_2 \rightarrow R_2
+          \\
+          \\
+          \left(\begin{array}{ccc|c}
+            1 & 0 & 0 & 0
+            \\
+            0 & 1 & 0 & -2
+            \\
+            0 & 0 & 1 & 0
+          \end{array}\right)
+          \\
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \begin{cases}
+            C_1=0
+            \\
+            C_2=-2
+            \\
+            C_3=0
+          \end{cases}
+        $
+        \\
+        \\
+        Therfore now we can find $\overrightarrow{X}$.
+        \\
+        \\
+        $
+          \overrightarrow{X}=0 e^{-2 t} \begin{pmatrix}
+            -\dfrac{8}{3}
+            \\
+            \\
+            \dfrac{3}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+(-2) e^{3 t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix}+0 e^{6 t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -2
+            \\
+            \\
+            1
+          \end{pmatrix}
+          \\
+          \\
+          \\
+          \\
+          \therefore ~~~~~ \overrightarrow{X}=-2e^{3 t} \begin{pmatrix}
+            0
+            \\
+            \\
+            -\dfrac{1}{2}
+            \\
+            \\
+            1
+          \end{pmatrix} ~~~~ \checkmark
+        $
+      }
 
 
     \item (10 points) (The Triangle Inequality.) Let $V$ be an inner product space with an inner product
