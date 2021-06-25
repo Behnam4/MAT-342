@@ -1487,6 +1487,7 @@
         $
         \\
         \\
+        \\
         \textbf{Basis of Column Space:}
         \\
         Recall that a leading one is the first nonzero entry in a row. The columns containing leading
@@ -1511,6 +1512,94 @@
               3
             \end{bmatrix}  
         \}  ~~~~ \checkmark
+        $
+        \\
+        \\
+        \\
+        Finally, the row space and column space each have bases with three vectors, so they have
+        dimension two. Therefore, the rank of $A$ is 2.
+        \\
+        \\
+        Based on the results we have found so far, the following system of equations can be written:
+        \\
+        \\
+        $
+          \begin{cases}
+            x_1-x_3+\dfrac{4}{3}x_4=0
+            \\
+            \\
+            x_2-x_3+\dfrac{8}{3}x_4=0
+            \\
+            \\
+            x_3=arbitrary
+            \\
+            \\
+            x_4=arbitrary
+          \end{cases}
+        $
+        \\
+        \\
+        The system has infinitely many solutions! we can write the solution in the vector form:
+        \\
+        \\
+        $
+          \begin{bmatrix}
+            1
+            \\
+            1
+            \\
+            1
+            \\
+            0
+          \end{bmatrix}x_3+\begin{bmatrix}
+            -\dfrac{4}{3}
+            \\
+            \\
+            -\dfrac{8}{3}
+            \\
+            \\
+            0
+            \\
+            \\
+            1
+          \end{bmatrix}x_4=\begin{bmatrix}
+            x_1
+            \\
+            x_2
+            \\
+            x_3
+            \\
+            x_4
+          \end{bmatrix}
+        $
+        \\
+        \\
+        Therefore the \textbf{null space} has a basis formed by the set $
+          \{
+            \begin{bmatrix}
+              1
+              \\
+              1
+              \\
+              1
+              \\
+              0
+            \end{bmatrix},
+            \begin{bmatrix}
+              -\dfrac{4}{3}
+              \\
+              \\
+              -\dfrac{8}{3}
+              \\
+              \\
+              0
+              \\
+              \\
+              1
+            \end{bmatrix}
+          \}. ~~~~ \checkmark
+          \\
+          \\
         $
       }
 
